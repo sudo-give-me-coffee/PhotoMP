@@ -13,7 +13,9 @@ wget -c "https://dl.bintray.com/sudo-give-me-coffee/granite/PHOTOGIMP-2018.zip"
 chmod +x ./GIMP_AppImage-git-2.10.9-withplugins-20190328-x86_64.AppImage
 chmod +x ./appimagetool-x86_64.AppImage
 
-pwd
+ls
+
+exit 1
 
 ###################################################################
 #                                                                 #
