@@ -1,0 +1,13 @@
+language: generic
+dist: trusty
+
+before_install:
+  - sudo apt-get install -y bbe
+
+script:
+  - bash makePhotoGIMP-2018.sh
+
+after_success:
+  - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
+  - bash upload.sh PhotoGIMP_2018-x86_64.AppImage
+
