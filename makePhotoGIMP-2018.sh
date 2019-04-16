@@ -10,7 +10,10 @@ echo -e "\nDownloading components...\n"
 wget -c "https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.9-withplugins-20190328-x86_64.AppImage"
 wget -c "https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage"
 wget -c "https://dl.bintray.com/sudo-give-me-coffee/granite/PHOTOGIMP-2018.zip"
-chmod +x *.AppImage
+chmod +x ./GIMP_AppImage-git-2.10.9-withplugins-20190328-x86_64.AppImage
+chmod +x ./appimagetool-x86_64.AppImage
+
+pwd
 
 ###################################################################
 #                                                                 #
