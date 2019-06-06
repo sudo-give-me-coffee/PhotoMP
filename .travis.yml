@@ -9,5 +9,5 @@ script:
 
 after_success:
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
-  - bash upload.sh PhotoGIMP_2018-x86_64.AppImage
+  - bash upload.sh PhotoGIMP*.AppImage
 
