@@ -39,8 +39,8 @@ function patchIcon() {
   echo -e "\nReplacing AppIcon...\n"
 
   mv ../gimp.desktop gimp.desktop
-  mv ../photogimp.svg photogimp.svg
-  ln -fs photogimp.svg .DirIcon
+  mv ../photogimp.png photogimp.png
+  ln -fs photogimp.png .DirIcon
   rm gimp.png
 }
 
@@ -58,7 +58,7 @@ function patchWindowIcon() {
 
   find usr/share/gimp/2.0/icons/ -name "gimp-wilber.svg" \
                                  -exec echo rm -v $1 {} \;  \
-                                 -exec cp -v photogimp.svg $1 {} \;
+                                 -exec cp -v photogimp.png $1 {} \;
 }
 
 function patchGIMP() {
