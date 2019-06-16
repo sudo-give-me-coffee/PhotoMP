@@ -7,6 +7,7 @@
 <p align="center"><i>"The GIMP for those who come from Photoshop"</i>.<br> It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
+<hr>
 
 ## What is? | ![ Build Status](https://api.travis-ci.org/sudo-give-me-coffee/PhotoGIMP.svg?branch=master)
 
