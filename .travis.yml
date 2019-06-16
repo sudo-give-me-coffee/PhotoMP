@@ -5,7 +5,7 @@ before_install:
   - sudo apt-get install -y bbe
 
 script:
-  - bash makePhotoGIMP-2018.sh
+  - bash makePhotoGIMP.sh
 
 after_success:
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
