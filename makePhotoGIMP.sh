@@ -5,7 +5,7 @@ HERE="$(dirname "$(readlink -f "${0}")")"
 function downloadGIMP () {
   echo "\nDownloading GIMP...\n"
 
-  VERSION="2.10.11-20190530"
+  export VERSION=$(wget -q "https://github.com/aferrero2707/gimp-appimage/releases" -O - | grep -e '<a href.*GIMP_AppImage-git.*.AppImage"' | cut -d '"' -f 2 | cut -d / -f 7 | sort -Vr | grep withplugins | grep -v 2.99 | head -n 1 | cut -d "-" -f 3-4)
   RELEASE_PATH="aferrero2707/gimp-appimage/releases/download/continuous"
 
   wget -c https://github.com/$RELEASE_PATH/GIMP_AppImage-git-$VERSION-x86_64.AppImage -O GIMP.AppImage
@@ -74,7 +74,7 @@ function patchGIMP() {
 function packAppImage() {
   echo -e "\nPackaging AppImage...\n"
   mv squashfs-root PhotoGIMP.AppDir
-  ./appimagetool-x86_64.AppImage PhotoGIMP.AppDir
+  ARCH=x86_64 ./appimagetool-x86_64.AppImage PhotoGIMP.AppDir
 }
 
 
@@ -82,8 +82,8 @@ unzip PATCH.zip
 downloadGIMP 
 downloadAppImageTool
 replaceFiles
+sudo chmod -R a+rx squashfs-root
 cd squashfs-root
-chmod -Rv 755 .
 patchIcon
 patchStartup
 patchWindowIcon
