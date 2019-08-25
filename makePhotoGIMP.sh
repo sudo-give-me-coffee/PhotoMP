@@ -11,7 +11,7 @@ function downloadGIMP () {
   wget -c https://github.com/$RELEASE_PATH/GIMP_AppImage-git-$VERSION-x86_64.AppImage -O GIMP.AppImage
 
   chmod +x GIMP.AppImage
-  ./GIMP.AppImage --appimage-extract
+  ./GIMP.AppImage --appimage-extract > /dev/null
 }
 
 function downloadAppImageTool () {
