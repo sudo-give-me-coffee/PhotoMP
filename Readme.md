@@ -15,7 +15,9 @@ PhotoGIMP is originally a GIMP layout modification to look like Adobe Photoshop 
 
 ### Look how it looks:
 
-![](https://github.com/sudo-give-me-coffee/PhotoGIMP/raw/master/screenshot.png)
+<h1 align="center">
+  <img src="screenshot.png" alt="PhotoGIMP">
+</h1>
 
 ### Credits:
 
