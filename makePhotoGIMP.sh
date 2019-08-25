@@ -37,8 +37,8 @@ function replaceFiles() {
 
 function patchIcon() {
   echo -e "\nReplacing AppIcon...\n"
-
-  mv ../gimp.desktop gimp.desktop
+  mv ../gimp.desktop photogimp.desktop
+  rm gimp.desktop
   mv ../photogimp.png photogimp.png
   ln -fs photogimp.png .DirIcon
   rm gimp.png
