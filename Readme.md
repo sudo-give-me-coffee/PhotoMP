@@ -4,7 +4,7 @@
   PhotoGIMP | <a href="https://github.com/sudo-give-me-coffee/PhotoGIMP/releases/download/continuous/PhotoGIMP-x86_64.AppImage">Download</a>
 </h1>
 
-<p align="center"><i>"The GIMP for those who come from Adobe Photoshop for Windows"</i>.<br> It works on Ubuntu, Fedora, Debian, and other major Linux
+<p align="center"><i>"The GIMP for those who come from Adobe Photoshop for Windows"</i>.<br> It works on Ubuntu, Fedora, Debian, their derivates and all other major Linux
 distributions.</p>
 
 <hr>
