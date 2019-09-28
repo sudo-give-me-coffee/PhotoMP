@@ -79,7 +79,7 @@ function packAppImage() {
 }
 
 
-unzip PATCH.zip
+unzip PATCH.zip  > /dev/null
 downloadGIMP 
 downloadAppImageTool
 replaceFiles
