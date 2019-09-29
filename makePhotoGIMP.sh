@@ -5,7 +5,16 @@ HERE="$(dirname "$(readlink -f "${0}")")"
 function downloadGIMP () {
   echo "\nDownloading GIMP...\n"
 
-  export VERSION=$(wget -q "https://github.com/aferrero2707/gimp-appimage/releases" -O - | grep -e '<a href.*GIMP_AppImage-git.*.AppImage"' | cut -d '"' -f 2 | cut -d / -f 7 | sort -Vr | grep withplugins | grep -v 2.99 | head -n 1 | cut -d "-" -f 3-4)
+  export VERSION=$(wget -q "https://github.com/aferrero2707/gimp-appimage/releases" -O - \
+                      |  grep -e '<a href.*GIMP_AppImage-git.*.AppImage"'                \
+                      |  cut -d '"' -f 2                                                 \
+                      |  cut -d / -f 7                                                   \
+                      |  sort -Vr                                                        \
+                      |  grep withplugins                                                \
+                      |  grep -v 2.99                                                    \
+                      |  head -n 1                                                       \
+                      |  cut -d "-" -f 3-4)
+                      
   RELEASE_PATH="aferrero2707/gimp-appimage/releases/download/continuous"
 
   wget -c https://github.com/$RELEASE_PATH/GIMP_AppImage-git-$VERSION-x86_64.AppImage -O GIMP.AppImage
@@ -16,6 +25,7 @@ function downloadGIMP () {
 
 function downloadAppImageTool () {
   echo "\nDownloading AppImageTool...\n"
+  
   wget -c "https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage"
   chmod +x ./appimagetool-x86_64.AppImage
 }
