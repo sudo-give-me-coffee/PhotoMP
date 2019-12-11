@@ -76,7 +76,7 @@ function patchGIMP() {
 
   cd usr/bin
   bbe -e 's/You can drop dockable dialogs here/                                  /' gimp-2.10 > gimp.tmp
-  bbe -e 's/GNU Image Manipulation Program/PhotoGIMP 2018 for Linux      /' gimp.tmp > gimp-2.10
+  mv gimp.tmp gimp-2.10
   chmod +x gimp-2.10
 
 }
