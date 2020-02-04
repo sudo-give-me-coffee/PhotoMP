@@ -24,4 +24,5 @@ PhotoGIMP is originally a GIMP layout modification to look like Adobe Photoshop 
  - [Dionatan Simioni](https://br.linkedin.com/in/dionatansimioni), original idea
  - [aferrero2707](https://github.com/aferrero2707), AppImage for GIMP 2.10
  - [probonopd](https://github.com/probonopd), fixed sandbox permissions issues
- - [ryu-ketsueki](https://github.com/ryu-ketsueki), icon art work
+ - [ryu-ketsueki](https://github.com/ryu-ketsueki), original icon art work
+ - [Henrique AD](https://github.com/henriquead7), current icon art work and splashscreen
