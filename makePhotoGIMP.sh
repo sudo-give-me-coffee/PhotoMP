@@ -102,3 +102,11 @@ patchGIMP
 
 cd $HERE
 packAppImage
+
+sudo apt install zsync
+
+wget -qc https://github.com/probonopd/uploadtool/raw/master/upload.sh
+zsyncmake PhotoGIMP-x86_64.AppImage
+bash upload.sh PhotoGIMP*.AppImage* PhotoGIMP-x86_64.AppImage PhotoGIMP-x86_64.AppImage.zsync
+
+
