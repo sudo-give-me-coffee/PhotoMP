@@ -8,7 +8,7 @@
   (/ (* pt dpi) 72)
 )
 
-(define (photogimp-set-margin image drawable superior esquerda direita inferior unidade delimitar marcar-centro)
+(define (guides-set-margin image drawable superior esquerda direita inferior unidade delimitar marcar-centro)
   (let* (
           (width  (car  (gimp-image-width image)))
           (height (car (gimp-image-height image)))
@@ -23,11 +23,11 @@
     ;---------------------------------------------------------------------
 
       (if (= delimitar TRUE) (begin
-        (photogimp-delimit-image image drawable 0 0)
+        (guides-delimit-image image drawable 0 0)
       ))
     
       (if (= marcar-centro TRUE) (begin
-        (photogimp-mark-centre image drawable 0 0)
+        (guides-mark-centre image drawable 0 0)
       ))
     
     ;---------------------------------------------------------------------
@@ -97,7 +97,7 @@
   )
 )
 
-(script-fu-register "photogimp-set-margin"
+(script-fu-register "guides-set-margin"
   _"Definir margens"
   _"Create four guides around the image "
   "Alan Horkan"
@@ -122,7 +122,7 @@
   SF-TOGGLE    "Marcar o centro"              FALSE
 )
 
-(script-fu-menu-register "photogimp-set-margin"
+(script-fu-menu-register "guides-set-margin"
                          "<Image>/Image/Guides")
                          
 

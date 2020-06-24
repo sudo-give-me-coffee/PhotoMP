@@ -1,6 +1,6 @@
 ;; -*-scheme-*-
 
-(define (photogimp-mark-centre image drawable)
+(define (guides-mark-centre image drawable)
   (let* (
           (width (car (gimp-image-width image)))
           (height (car (gimp-image-height image)))
@@ -15,7 +15,7 @@
   )
 )
 
-(script-fu-register "photogimp-mark-centre"
+(script-fu-register "guides-mark-centre"
   _"Marcar o centro"
   _"Create four guides around the image"
   "Alan Horkan"
@@ -26,7 +26,7 @@
   SF-DRAWABLE "Drawable" 0
 )
 
-(script-fu-menu-register "photogimp-mark-centre"
+(script-fu-menu-register "guides-mark-centre"
                          "<Image>/Image/Guides")
                          
 

@@ -1,6 +1,6 @@
 ;; -*-scheme-*-
 
-(define (photogimp-delimit-image image drawable)
+(define (guides-delimit-image image drawable)
   (let* (
           (width (car (gimp-image-width image)))
           (height (car (gimp-image-height image)))
@@ -17,7 +17,7 @@
   )
 )
 
-(script-fu-register "photogimp-delimit-image"
+(script-fu-register "guides-delimit-image"
   _"Delimitar imagem"
   _"Create four guides around the image"
   "Alan Horkan"
@@ -28,7 +28,7 @@
   SF-DRAWABLE "Drawable" 0
 )
 
-(script-fu-menu-register "photogimp-delimit-image"
+(script-fu-menu-register "guides-delimit-image"
                          "<Image>/Image/Guides")
                          
 

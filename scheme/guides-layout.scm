@@ -8,7 +8,7 @@
   (/ (* pt dpi) 72)
 )
 
-(define (photogimp-guide-layout image drawable linhas colunas margem-interna-horizontal
+(define (guides-guide-layout image drawable linhas colunas margem-interna-horizontal
                                                               margem-interna-vertical
                                                               unidade-margem-interna
                                                               margem-externa-superior
@@ -44,7 +44,7 @@
         (set! unidade-margem-externa (+ unidade-margem-interna 1))
       ))
       
-      (photogimp-set-margin image drawable margem-externa-superior
+      (guides-set-margin image drawable margem-externa-superior
                                            margem-externa-esquerda
                                            margem-externa-direita
                                            margem-externa-inferior
@@ -109,7 +109,7 @@
   )
 )
 
-(script-fu-register "photogimp-guide-layout"
+(script-fu-register "guides-guide-layout"
   _"Layout de guias"
   _"Create four guides around the image "
   "Alan Horkan"
@@ -144,7 +144,7 @@
   SF-TOGGLE    "Delimitar imagem"               TRUE
 )
 
-(script-fu-menu-register "photogimp-guide-layout"
+(script-fu-menu-register "guides-guide-layout"
                          "<Image>/Image/Guides")
                          
 
