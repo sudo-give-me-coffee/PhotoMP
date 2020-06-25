@@ -1,6 +1,6 @@
 ;; -*-scheme-*-
 
-(define (layer-via-copy image drawable)
+(define (layer-via-cut image drawable)
   (let* (
           (height (car (gimp-image-height image)))
           (width  (car (gimp-image-width  image)))
@@ -13,20 +13,24 @@
           (x2 (cadr (cddr boundaries)))
           (y2 (caddr (cddr boundaries)))
         )
-        
-    (gimp-image-undo-group-start image)
-      (gimp-edit-copy drawable)
-      (gimp-image-insert-layer image new-layer-FG 0 0)
-      (gimp-image-set-active-layer image new-layer-FG)
-      (gimp-floating-sel-anchor (car (gimp-edit-paste new-layer-FG TRUE)))
-    (gimp-image-undo-group-end image)
-    (gimp-displays-flush)
+    (if (= selection TRUE)
+      (begin
+        (gimp-image-undo-group-start image)
+          (gimp-edit-cut drawable)
+          (gimp-edit-clear (car (gimp-image-get-active-layer image)))
+          (gimp-image-insert-layer image new-layer-FG 0 0)
+          (gimp-image-set-active-layer image new-layer-FG)
+          (gimp-floating-sel-anchor (car (gimp-edit-paste new-layer-FG TRUE)))
+        (gimp-image-undo-group-end image)
+        (gimp-displays-flush)
+      )
+    )
   )
 )
 
-(script-fu-register "layer-via-copy"
-  _"Nova camada por cópia"
-  _"Copia a seleção para uma nova layer duplica a\ncamada se não houver seleção"
+(script-fu-register "layer-via-cut"
+  _"Nova camada por recorte"
+  _"Recorta a seleção para uma nova layer nada é\nfeito se não houver seleção"
   "Natanael Barbosa Santos"
   "Natanael Barbosa Santos, 2020.  Licenced under MIT terms"
   ""
@@ -35,7 +39,7 @@
   SF-DRAWABLE   "Drawable" 0
 )
 
-(script-fu-menu-register "layer-via-copy"
+(script-fu-menu-register "layer-via-cut"
                          "<Image>/Layer")
                          
 
