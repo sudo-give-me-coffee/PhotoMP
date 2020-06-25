@@ -38,7 +38,7 @@
   SF-DRAWABLE   "Drawable" 0
 )
 
-(script-fu-menu-register "photogimp-select-to-mask"
+(script-fu-menu-register "select-to-mask"
                          "<Image>/Layer")
                          
 
