@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      REPO_SLUG: ${{ github.repository }}
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build linux
+      run: bash ./build-linux.sh
