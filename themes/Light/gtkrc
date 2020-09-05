@@ -1,0 +1,1482 @@
+########################################################################
+# CS6-grey-3 | GIMP Theme created by rgb4u.com
+########################################################################
+#  COPYRIGHT INFORMATION
+########################################################################
+# Craeated by : rgb4u
+# Copyright (c) June 02, 2014 Gabriela W.
+#
+# No part of this code and graphic elements can be reproduced, distributed,
+# or transmitted in any form or by any means, including photocopying,
+# recording, or other electronic or mechanical methods, without the
+#  prior written permission of the publisher. 
+#
+# YOU CAN USE THESE THEME - for your personal, and commercial projects
+########################################################################
+# CONTACT : rgb4u@rgb4u.com
+########################################################################
+#
+# The "Gimp Theme Project" by rgb4u  is collection of FREE Themes for GIMP
+#
+# This Project is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+########################################################################
+# LINKS :
+########################################################################
+#
+# List of style properties on the GNOME desktop :
+# https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkThemes/StyleProperties
+#
+# GTK Stock :
+# https://developer.gnome.org/gtk3/stable/
+# https://developer.gnome.org/gtk3/stable/gtk3-Stock-Items.html
+# http://www.pygtk.org/pygtk2reference/gtk-stock-items.html
+#
+# GIMP Stock :
+# http://developer.gimp.org/api/2.0/libgimpwidgets/libgimpwidgets-GimpStock.html
+#
+# GTK + Overview :
+# https://developer.gnome.org/gtk3/stable/
+# GTK Themes :
+# https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkThemes/
+#
+########################################################################
+# GENERAL WIDGET PROPERTIES :
+########################################################################
+#
+# fg - Sets the foreground color of a widget
+# bg - Sets the background color of a widget
+# text - Sets the foreground color for widgets that have editable text
+# base - Sets the background color for widgets that have editable text
+# bg_pixmap - Sets the background of a widget to a tiled pixmap
+# font_name - Sets the font to be used with the given widget
+# xthickness - Sets the left and right border width
+# ythickness - similar to above but for the top and bottom
+#
+# WIDGET STATE :
+#
+# NORMAL - The normal state of a widget. The mouse is not over it, and it is not being pressed, etc
+# PRELIGHT - When the mouse is over top of the widget, colors defined using this state will be in effect
+# SELECTED - When an object is selected, it takes these attributes
+# INSENSITIVE - This is the state when a widget is 'greyed out'. It is not active, and cannot be clicked on
+# ACTIVE - When the widget is pressed or clicked it will be active, and the attributes assigned by this tag will be in effect
+#
+########################################################################
+# COLOR MARKERS : DELETE THIS INFO AND FILES BEFORE PUBLISHING !!!
+########################################################################
+# In your theme folder youu will find 2 files :
+# ff0000.png - Bright Red Color
+# 5c5c5c.png - Bright Yellow Color
+#
+# THEY ARE JUST MARKERS DELETE THEM !!!
+#
+########################################################################
+# DEFAULT STYLES
+########################################################################
+
+style "gimp-default-style"
+{
+# Enabling the following line for some reason breaks toolbox resize
+# increment calculation. You can enable it to get an even smaller GUI
+# but need to restart GIMP after the theme change
+#
+# Uncommenting this line allows to set a different (smaller) font for GIMP.
+# font_name = "Droid Sans 10"
+
+ GtkWidget::focus-padding = 2
+ GimpColorNotebook::tab-border = 0 # Unknow
+ GtkOptionMenu::indicator_size = { 1, 1 } #{ 5, 11 }
+ GtkOptionMenu::indicator_spacing = { 1, 1, 1, 1 } #{ 4, 3, 1, 1 }
+ GtkPaned::handle_size = 2 #5
+ GimpMenuDock::minimal_width = 200
+ GimpColorNotebook::tab_border = 0
+ GimpUnitComboBox::appears_as_list = 0 
+}
+
+gtk-icon-sizes = "panel-menu=16,16:gtk-menu=12,12"
+
+gtk-menu-drop-shadow = 0
+gtk-menu-shadow-delay = 0
+
+########################################################################
+# START "CS6-grey-3"
+########################################################################
+style "rgb4u-default" = "CS6-grey-3" 
+{ 
+
+# D :
+ GimpDeviceEditor::handle-size = 2 # Unknow
+ GimpDockable::content-border = 1 # Border between opacity value bar and window-edge 
+ GimpDock::default_height = 240
+ GimpDockSeparator::height = 3 #5 
+ GimpDockSeparator::width = 3   
+ GimpDockbook::tab-border = 0 # Width of Layers/Channels/Path Tab 
+ GtkDialog::content-area-border = 2 # Main gimp border for windows (like preferences)
+ GtkDialog::action-area-border = 2 # Unknow,space between inner-gimp windows
+ GtkDialog::button_spacing = 5 #6
+ 
+# EF :
+
+ GimpEditor::content-spacing = 1 # Vertical space between value-bars in opt-panel
+ GimpEditor::button-spacing = 0 # spacing between opt-bar icons,like anchor,new-layer
+ GimpEditor::button-icon-size = menu # Icons INSIDE the Panel-Bar(new-layer,anchor,delete) 
+ GimpFrame::label-spacing = 2 # empty vertical space between labels
+ 
+ # ST :
+ GimpSpinScale::inner-border = {0,0,0,0}
+ GimpSpinScale::default-outside-border = {0,0,0,0}
+ GimpSpinScale::default-border = {0,0,0,0}
+ GimpToolbox::button_relief = none
+ GimpToolPalette::button-relief = none # Unknow   
+ 
+########################################################
+# ICON - RESIZE 
+########################################################
+#
+# "invalid"= 0px 
+# "menu"= 13x13px 
+# "small-toolbar" = 16x16px 
+# "button" = 20x20px 
+# "large-toolbar" = 24x24px
+# "dnd" = 32x32px 
+# "dialog" = 48x48px
+
+ GimpToolPalette::tool-icon-size = button # Tool-Bar Icons Size
+ GimpDockbook::tab-icon-size = button # Panel-Box Icons Size
+ GimpEditor::button_icon_size = menu # Icons in Option-Bar - New/Raise/Lower/Delete Layer,Anchor 
+ # Unknow :
+ GimpMenuDock::menu_preview_size = button # Unknow
+ GimpToolbox::tool_icon_size = button # Unknow
+ GimpColorNotebook::tab_icon_size = button # Unknow
+ 
+########################################################
+# HTML - LINKS
+########################################################
+
+  GnomeHref::link_color="#4a669b" # Blue
+  GtkHTML::spell_error_color="#f2c0c0" # Pastel Red
+  GtkHTML::vlink_color="#f2c0c0"
+  GtkHTML::link_color="#4a669b"
+  GtkHTML::alink_color="#4a669b" 
+  GtkLinkButton::link-color="#4a669b"
+  
+  GtkWidget::link-color="#4a669b"
+  GtkWidget::visited-link-color="#CCEACC"
+  GtkTextView::error-underline-color="#f2c0c0"
+  GtkIMHtml::hyperlink-color="#4a669b" 
+
+  GtkScrollbar::has_secondary_backward_stepper = 0
+  GtkScrollbar::has_secondary_forward_stepper = 0
+  
+  GtkButton::default_border = {0,0,0,0}
+  GtkButton::default_outside_border = { 0, 0, 0, 0 }
+  GtkButton::min_width = 23
+  
+  #GtkWidget::focus_padding = 1
+
+  #GtkEntry::padding = 2
+  GtkPaned::handle_size = 2
+  GtkButton::internal-padding = 3
+  GtkMenuBar::internal-padding = 1
+  GtkContainer::border_width = 0
+
+  GtkOptionMenu::indicator_size = {6, 7}
+  GtkOptionMenu::indicator_spacing = { 6, 3, 3, 3 }
+
+  font = "-*-helvetica-medium-r-normal--12-*-*-*-*-*-*-*"
+  
+########################################################
+# COLORS
+########################################################
+
+        bg[NORMAL]        = "#d6d6d6" # Main Window BG and border for Tool/Status/Panel-Bar
+        bg[PRELIGHT]      = "#d6d6d6" #
+        bg[SELECTED]      = "#b8b8b8" # Dark-Grey / Headers in preferences, tool panel (value bar)
+        bg[INSENSITIVE]   = "#d6d6d6"
+        bg[ACTIVE]        = "#d6d6d6"
+
+        fg[NORMAL]        = "#5c5c5c" # Light-Grey Basic text color
+        fg[PRELIGHT]      = "#5c5c5c" # White / Text of Element:hover
+        fg[SELECTED]      = "#191919" # White / Main Headers in Menu 
+        fg[INSENSITIVE]   = "#000000" # Black / Unselectable Menu Text
+        fg[ACTIVE]        = "#666666" # Light-Grey / Unselected Layers name, Selected Check-Box
+
+        text[NORMAL]      = "#5c5c5c" # White / Layers Name - no:hover state,number value in bars
+        text[PRELIGHT]    = "#5c5c5c"
+        text[SELECTED]    = "#5c5c5c" # Active Element Text, Color of Highlight Text
+        text[INSENSITIVE] = "#000000" # Black Border for Widget
+        text[ACTIVE]      = "#5c5c5c" #  Highlited but un-clicked Text
+
+        base[NORMAL]      = "#b8b8b8" # Dark-Grey / Box BG, with value/property 
+        base[PRELIGHT]    = "#cccccc"
+        base[SELECTED]    = "#cccccc" # Dark-Grey / Highlight of Selected Element 
+        base[INSENSITIVE] = "#d6d6d6" # Middle-Grey / Unselectable Window, empty or not for change
+        base[ACTIVE]      = "#cccccc" # Dark-Grey / Highlight
+
+
+ NautilusIconContainer::highlight_alpha=255
+ NautilusIconContainer::dark_info_color = "#5c5c5c" # ?? RED
+ NautilusIconContainer::light_info_color = "#5c5c5c" # ?? RED
+ xthickness=2
+ ythickness=2
+
+########################################################
+    engine "pixmap"
+{ 
+image
+      	{
+        	function        = FOCUS
+		recolorable     = TRUE
+		overlay_file    = "IMG/Colors/transparent.png" # Active,ready to press OK Button, etc.
+		overlay_border  = {0,0,0,0}
+		overlay_stretch = TRUE
+      	}
+
+   	image 
+      	{
+       		function        = SHADOW
+ 		recolorable     = TRUE
+		shadow          = IN
+		file            = "IMG/Colors/transparent.png" # Outside windows border - layers name, meassurements
+		border          = {0,0,0,0}
+		stretch         = TRUE
+      	}	
+
+        image 
+      	{
+       		function        = SHADOW
+ 		recolorable     = TRUE
+		shadow          = ETCHED_IN
+		file            = "IMG/Colors/transparent.png" # Unknow
+		border          = {0,0,0,0}
+		stretch         = TRUE
+      	}	
+      	
+    	image 
+      	{ 
+       		function        = SHADOW
+ 		recolorable     = TRUE
+		shadow          = OUT
+		file            = "IMG/Colors/transparent.png"
+		border          = {0,0,0,0}
+		stretch         = TRUE
+      	}	
+      	
+        image 
+      	{
+       		function        = SHADOW
+ 		recolorable     = TRUE
+		shadow          = ETCHED_OUT
+		file            = "IMG/Colors/transparent.png"
+		border          = {0,0,0,0}
+		stretch         = TRUE
+      	}	
+########################################################
+# LINES
+########################################################
+    	image
+      	{
+        	function        = HLINE
+		recolorable     = TRUE
+		file            = "IMG/Lines/line-h.png"
+		border          = { 0, 0, 1, 1 }
+		stretch         = TRUE
+      	}	
+
+
+    	image
+      	{
+        	function        = VLINE
+		recolorable     = TRUE
+		file            = "IMG/Lines/line-v.png"
+		border          = { 1, 0, 1, 1 }
+		stretch         = TRUE
+      	}	
+
+    }
+
+} 
+
+widget "*GimpDisplay*" style "rgb4u-default"
+########################################################################
+# END "CS6-grey-3"
+########################################################################
+
+
+########################################################################
+# GIMP STYLES LIST :
+########################################################################
+
+########################################################
+# GimpDisplay = Main GIMP Window - with Big Wilber
+########################################################
+
+style "gimp-display-style" = "gimp-default-style"
+{
+    bg[NORMAL]        = "#888888" # Main Window BG
+    bg[PRELIGHT]      = "#888888" # Unknow
+    bg[SELECTED]      = "#888888" # Unknow
+    bg[INSENSITIVE]   = "#888888" # Unknow
+    bg[ACTIVE]        = "#888888" # Unknow                      
+}
+
+widget "*GimpDisplayShell.*" style "gimp-display-style"
+
+########################################################
+# GimpDockable = PANEL-BAR
+########################################################
+
+style "gimp-dockable-style" = "gimp-default-style"
+{
+
+    bg[NORMAL]        = "#d6d6d6" # BG for tool-option panel
+    bg[PRELIGHT]      = "#d6d6d6" # open-close check-box in opt-panel
+    bg[SELECTED]      = "#b8b8b8" # Dark-Grey bg color for value bar, like opacity
+    bg[INSENSITIVE]   = "#000000" # BlackText in value bar,like opacity
+    bg[ACTIVE]        = "#5c5c5c" # Unknow, Yellow
+
+    fg[NORMAL]        = "#5c5c5c" # Font color in panel-bar,like layer mode
+    fg[PRELIGHT]      = "#5c5c5c" # Grey Text in Selected value bar,like opacity
+    fg[SELECTED]      = "#5c5c5c" # ^^^
+    fg[INSENSITIVE]   = "#000000" # Black Text in panel-bar, in no-open-file mode
+    fg[ACTIVE]        = "#5c5c5c" # Clicked element - like menu-arrow in tool-panel
+                
+    text[NORMAL]      = "#666666" # Grey Outside Border for value bar, value-number
+    text[PRELIGHT]    = "#5c5c5c" # Unknow, White
+    text[SELECTED]    = "#5c5c5c" # Clicked layer text
+    text[INSENSITIVE] = "#000000" # Black unselectable text
+    text[ACTIVE]      = "#5c5c5c" # Clicked layer text 
+
+    base[NORMAL]      = "#d6d6d6" # BG color for arrow-bar,layer-mode name
+    base[PRELIGHT]    = "#d6d6d6" # Unknow
+    base[SELECTED]    = "#b8b8b8" # Selected layer bg # Use 4b5367 for dark-blue
+    base[INSENSITIVE] = "#d6d6d6" #
+    base[ACTIVE]      = "#b8b8b8" # Selected layer bg # Use 4b5367 for dark-blue         
+        
+  GimpFrame::label-bold = 0
+  GtkButton::inner-border = {0,0,0,0} # (L,R,T,B)
+  GtkButton::focus-line_width = 1
+  GtkButton::focus-padding = 0
+
+}
+
+widget "*GimpDockable*" style "gimp-dockable-style"
+
+########################################################
+# GimpFrame
+########################################################
+
+# Leave empty or use widget "*GimpFrame*"style "Frame"
+
+########################################################
+# GRID - bg for box with brushes
+########################################################
+
+style "gimp-grid-view-style" = "gimp-default-style"
+{
+        bg[NORMAL]        = "#b8b8b8" # 
+        bg[PRELIGHT]      = "#b8b8b8" # 
+        bg[SELECTED]      = "#b8b8b8" # 
+        bg[INSENSITIVE]   = "#b8b8b8" # 
+        bg[ACTIVE]        = "#b8b8b8" #               
+}
+
+widget "*GimpContainerGridView*GtkViewport*" style "gimp-grid-view-style"
+
+########################################################
+# GimpRuler
+########################################################
+
+style "Ruler" = "gimp-default-style"
+{
+        bg[NORMAL]        = "#d6d6d6" # Rulers BG
+        bg[PRELIGHT]      = "#d6d6d6" # 
+        bg[SELECTED]      = "#d6d6d6" # 
+        bg[INSENSITIVE]   = "#d6d6d6" # 
+        bg[ACTIVE]        = "#d6d6d6" # 
+        
+        fg[NORMAL]        = "#5c5c5c" # Rulers Text
+        fg[PRELIGHT]      = "#5c5c5c" #
+        fg[SELECTED]      = "#5c5c5c" #
+        fg[INSENSITIVE]   = "#5c5c5c" #
+        fg[ACTIVE]        = "#5c5c5c" #               
+}
+
+widget "*GimpDisplayShell.*GimpRuler*" style "Ruler"
+
+########################################################
+# GimpScaleComboBox
+########################################################
+# > Go to Status Bar
+
+########################################################
+# GimpUnitComboBox
+########################################################
+# > Go to Status Bar
+
+########################################################################
+# GTK STYLES LIST :
+########################################################################
+
+########################################################
+# GtkButton
+########################################################
+# You can create your own shadow effect for buttons by creating files :
+# 70px x 25px 72ppi and replacing the current file path( vvv "IMG/")
+#
+style "rgb4u-button" {
+  xthickness = 4
+  ythickness = 2
+
+engine "pixmap" {
+
+image {
+	function = BOX
+	recolorable = TRUE
+	state = NORMAL
+	detail = "buttondefault"
+	shadow = IN
+	file = "IMG/Buttons/button_normal.png" # Button Normal
+	border = {6,6,6,6}
+	stretch = TRUE
+}
+
+image {
+	function = BOX
+	recolorable = TRUE
+	state = NORMAL
+	shadow = OUT
+	file = "IMG/Buttons/button_normal.png" # Button Normal
+	border = {6,6,6,6}
+	stretch = TRUE
+}
+
+image {
+	function = BOX
+	recolorable     = TRUE
+	state           = PRELIGHT
+	shadow          = IN
+	file            = "IMG/Buttons/button_hover.png" # Button Prelight
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+	function = BOX
+	recolorable     = TRUE
+	state           = ACTIVE
+	shadow          = IN
+	file            = "IMG/Buttons/button_hover.png" # Button Active
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+
+    function        = BOX
+	recolorable     = TRUE
+	state           = PRELIGHT
+	shadow          = OUT
+	file            = "IMG/Buttons/button_hover.png" # Button Prelight
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+      
+image {
+    function        = BOX
+	recolorable     = TRUE
+	state           = NORMAL
+	shadow          = IN
+	file            = "IMG/Buttons/button_flat.png" # Button Flat
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+    function        = BOX
+	recolorable     = TRUE
+	state           = INSENSITIVE
+	shadow          = IN
+	file            = "IMG/Buttons/button_flat.png" # Button Flat
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+     function        = BOX
+	recolorable     = TRUE
+	state           = INSENSITIVE
+	shadow          = OUT
+	file            = "IMG/Buttons/button_flat.png" # Button Flat
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+    function        = BOX
+	recolorable     = TRUE
+	state           = SELECTED
+	shadow          = IN
+	file            = "IMG/Buttons/button_hover.png" # Button Push
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image  {
+    function        = BOX
+	recolorable     = TRUE
+	state           = ACTIVE
+	shadow          = IN
+	file            = "IMG/Buttons/button_hover.png" # Button Active
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+}
+
+}
+class "GtkButton" style "rgb4u-button"
+
+########################################################
+# GtkCheckButton
+########################################################
+# Check Square Buttons 
+############################################
+style "CheckBox" {
+
+engine "pixmap" {
+
+image {
+   function        = CHECK
+   recolorable     = TRUE
+   shadow          = OUT
+   overlay_file    = "IMG/Check-Radio/check1.png"
+   overlay_stretch = FALSE
+}
+
+image {
+   function        = CHECK
+   recolorable     = TRUE
+   shadow          = ETCHED_IN
+   overlay_file    = "IMG/Check-Radio/check1.png"
+   overlay_stretch = FALSE
+}
+
+image {
+   function        = CHECK
+   recolorable     = TRUE
+   shadow          = IN
+   overlay_file    = "IMG/Check-Radio/check2.png"
+   overlay_stretch = FALSE
+}
+
+}
+
+}
+
+class "GtkCheckButton" style "CheckBox"
+
+############################################
+# Radio Buttons 
+############################################
+
+style "RadioButton" {
+
+engine "pixmap" {
+
+image {
+    function        = OPTION
+    recolorable     = TRUE
+    shadow          = OUT
+    overlay_file    = "IMG/Check-Radio/radio1.png"
+    overlay_border  = {0,0,0,0}
+    overlay_stretch = FALSE
+}
+
+image {
+    function        = OPTION
+    recolorable     = TRUE
+    shadow          = IN
+    overlay_file    = "IMG/Check-Radio/radio2.png"
+    overlay_border  = {0,0,0,0}
+    overlay_stretch = FALSE
+}
+
+image {
+    function        = OPTION
+    recolorable     = TRUE
+    shadow          = ETCHED_IN
+    overlay_file    = "IMG/Check-Radio/radio1.png"
+    overlay_border  = {0,0,0,0}
+    overlay_stretch = FALSE
+}
+
+}
+
+}
+
+class "GtkRadioButton" style "RadioButton"
+
+########################################################
+# GtkEntry
+# Number values for selected range - like Ripple filter
+########################################################
+
+# Leave empty or use class "GtkEntry" style "Entry"
+
+########################################################
+# Gtk-List
+########################################################
+style "list-header"{
+
+engine "pixmap" {
+
+# This image is used to draw the headers of columns in list views when they are
+	#not selected
+	
+image{
+   	function        = BOX
+	recolorable     = TRUE
+	shadow          = OUT
+	file            = "IMG/Colors/transparent.png"
+	border          = {0,0,0,0}
+	stretch         = TRUE
+}
+
+# This image is used to draw the column headers in list views when they are
+	#clicked
+	
+image{
+   	function        = BOX
+	recolorable     = TRUE
+	shadow          = IN
+	file            = "IMG/Colors/transparent.png"
+	border          = {0,0,0,0}
+	stretch         = TRUE
+}
+
+# Does this do anything?
+
+image{
+   	function        = BOX
+	recolorable     = TRUE
+	shadow	    = OUT
+	state		    = PRELIGHT
+	file            = "IMG/Colors/transparent.png"
+	border          = {0,0,0,0}
+	stretch         = TRUE
+}	
+}
+    	
+}
+
+widget_class "GtkCList" style "list-header"
+
+########################################################
+# GtkMenuBar
+########################################################
+
+style "menubar"	{
+ 
+ xthickness			= 4 # Width for main-menu buttons
+ ythickness			= 2 # Heihgt and line-height for main-menu buttons
+
+engine "pixmap"{
+
+image{
+	function	= BOX
+	state = NORMAL
+	file		= "IMG/Buttons/menu.png" # Main-Menu Bar BG
+	border	= { 2,2,2,2 }
+	stretch	= TRUE
+} 
+}
+
+}
+
+class "GtkMenuBar*"  style "menubar"
+
+########################################################
+# GtkMenu
+########################################################
+
+style "rgb4u-menu" {
+  xthickness			= 4
+  ythickness			= 2 
+  
+    bg[PRELIGHT]      = "#b8b8b8"
+    fg[PRELIGHT]      = "#666666"
+           
+}
+class "GtkMenu*" style "rgb4u-menu"
+
+########################################################
+# GtkMenuItem
+########################################################
+
+style "menuitem"
+{
+# Styles are Inherited from ^^^ GtkMenu               
+}
+
+class "GtkMenuItem"	style "menuitem"
+
+########################################################
+# GtkNotebook = TABS
+########################################################
+
+style "notebook" {
+
+engine "pixmap" {
+image {
+	function = EXTENSION
+	state = ACTIVE
+	gap_side = BOTTOM
+	file = "IMG/Tabs/tab-top.png"
+	border = {1,2,1,1}
+	stretch = TRUE
+}
+
+image {
+	function = EXTENSION
+	gap_side = BOTTOM
+	file = "IMG/Tabs/tab-top-active.png"
+	border = {1,2,1,1}
+	stretch = TRUE
+}
+
+image {
+	function = EXTENSION
+	gap_side = TOP
+	file = "IMG/Tabs/tab-bottom-active.png"
+	border = {1,3,1,1}
+	stretch = TRUE
+}
+
+image{
+    function          = BOX_GAP
+    recolorable       = TRUE
+    file              = "IMG/Colors/transparent.png" # Panel-Bar bg / Border color
+    border            = {0,0,0,0} 
+    stretch           = TRUE
+    gap_file          = "IMG/Colors/transparent.png" # Line in the bottom of active tool name/icon
+    gap_border        = {0,0,0,0}
+    gap_start_file    = "IMG/Lines/line-h.png" # Line - Left site of active element
+    gap_start_border  = {0,0,0,0}
+    gap_end_file      = "IMG/Lines/line-h.png" # Line - Right site of active element
+    gap_end_border    = {0,0,0,0}
+    gap_side          = TOP
+}
+    
+image{
+    function          = BOX_GAP
+    recolorable       = TRUE
+    file              = "IMG/Colors/transparent.png"
+    border            = {0,0,0,0}
+    stretch           = TRUE
+    gap_file          = "IMG/Colors/transparent.png"
+    gap_border        = {0,0,0,0}
+    gap_start_file    = "IMG/Colors/transparent.png" #
+    gap_start_border  = {0,0,0,0}
+    gap_end_file      = "IMG/Colors/transparent.png" #
+    gap_end_border    = {0,0,0,0}
+    gap_side          = BOTTOM
+}
+    
+image  {
+    function          = BOX_GAP
+    recolorable       = TRUE
+    file              = "IMG/Colors/transparent.png"
+    border            = {0,0,0,0}
+    stretch           = TRUE
+    gap_file          = "IMG/Colors/transparent.png"
+    gap_border        = {0,0,0,0}
+    gap_start_file    = "IMG/Colors/transparent.png"
+    gap_start_border  = {0,0,0,0}
+    gap_end_file      = "IMG/Colors/transparent.png"
+    gap_end_border    = {0,0,0,0}
+    gap_side          = LEFT
+}
+    
+image {
+    function          = BOX_GAP
+    recolorable       = TRUE
+    file              = "IMG/Colors/transparent.png"
+    border            = {0,0,0,0}
+    stretch           = TRUE
+    gap_file          = "IMG/Colors/transparent.png"
+    gap_border        = {0,0,0,0}
+    gap_start_file    = "IMG/Colors/transparent.png"
+    gap_start_border  = {0,0,0,0}
+    gap_end_file      = "IMG/Colors/transparent.png"
+    gap_end_border    = {0,0,0,0}
+    gap_side          = RIGHT
+ }
+ }
+ 
+}
+class "GtkNotebook" style "notebook"
+
+########################################################
+# GtkOptionMenu
+########################################################
+
+style "OptionMenu" {
+
+ engine "pixmap" {
+       
+image {
+    function        = BOX
+    recolorable     = TRUE
+    state           = NORMAL
+    file            = "IMG/Colors/b8b8b8.png"
+    border          = { 12, 23, 10, 11 }
+    stretch         = TRUE
+}
+
+image {
+    function        = BOX
+    recolorable     = TRUE
+    state           = PRELIGHT
+    file            = "IMG/Colors/b8b8b8.png"
+    border          = { 12, 23, 10, 11 }
+    stretch         = TRUE
+}
+
+image {
+    function        = TAB
+    recolorable     = TRUE
+    overlay_file    = "IMG/Arrows/arrow.png"
+    overlay_stretch = FALSE
+}
+
+image {
+    function        = TAB
+    recolorable     = TRUE
+    state           = INSENSITIVE
+    overlay_file    = "IMG/Arrows/arrow-int.png"
+    overlay_stretch = FALSE
+}
+}
+
+}
+
+class "GtkOptionMenu" style "OptionMenu"
+
+########################################################
+# GtkPaned
+########################################################
+# Paned Widgets: Windows divided into two or more sections, which can be
+# resized by dragging HANDLES
+
+style "rgb4u-paned" = "rgb4u-default"{
+
+  xthickness = 0
+  ythickness = 0
+
+  GtkPaned::handle_size = 2
+
+engine "pixmap"{
+
+# The handle on horizontal dividers :
+image{
+	function = HANDLE
+	recolorable = TRUE
+	
+# You can change this to "IMG/Colors/transparent.png" or different file :
+		
+	file            = "IMG/Colors/888888.png" 
+	border          = {0,0,0,0}
+	stretch         = TRUE
+	overlay_border = {0,0,0,0}
+	overlay_stretch = FALSE
+	orientation = HORIZONTAL
+}
+
+# The handle on vertical dividers :
+image{
+	function = HANDLE
+	recolorable = TRUE
+	
+# You can change this to "IMG/Colors/transparent.png" or different file :
+		
+  	file            = "IMG/Colors/888888.png"
+	border          = { 0,0,0,0 }
+	stretch         = TRUE
+	overlay_border = {0,0,0,0}
+	overlay_stretch = FALSE
+	orientation = VERTICAL
+}
+}
+
+}
+
+class "Gtk*Paned" style "rgb4u-paned"
+
+########################################################
+# GtkProgressBar
+########################################################
+
+style "ProgressBar" = "rgb4u-default" {
+xthickness = 1
+ythickness = 1
+  
+engine "pixmap" {
+image {
+    function        = BOX
+    recolorable     = TRUE
+    detail          = "bar"
+    file            = "IMG/ProgressBar/bar.png"
+    border          = { 2, 2, 3, 3}
+    stretch         = TRUE
+}
+image {
+    function        = BOX
+    recolorable     = TRUE
+    detail          = "trough"
+    file            = "IMG/ProgressBar/trough.png"
+    border          = { 3, 3, 4, 4}
+    stretch         = TRUE
+    orientation     = HORIZONTAL
+}
+}
+}
+
+class "GtkProgressBar" style "ProgressBar"
+
+########################################################
+# GtkScale
+########################################################
+
+style "Scales" {
+
+ GtkVScale::slider_length = 21
+ GtkVScale::slider_width = 11
+ GtkHScale::slider_length = 11
+ GtkHScale::slider_width = 21
+
+engine "pixmap" {
+ image {
+     function        = BOX
+     recolorable     = TRUE
+     detail          = "trough"
+     file            = "IMG/Range/bar-v.png"
+     border          = { 0, 0, 10, 10 }
+     stretch         = TRUE
+     orientation     = VERTICAL
+}
+
+image {
+    function        = BOX
+    recolorable     = TRUE
+    detail          = "trough"
+    file            = "IMG/Range/bar-h.png"
+    border          = { 10, 10, 0, 0 }
+    stretch         = TRUE
+    orientation     = HORIZONTAL
+}
+
+image {
+    function        = SLIDER
+    recolorable     = TRUE
+    file            = "IMG/Range/button-h.png"
+    border          = { 0, 0, 0, 0 }
+    stretch         = TRUE
+    orientation     = HORIZONTAL
+}  
+ 
+image {
+    function        = SLIDER
+    recolorable     = TRUE
+    file            = "IMG/Range/button-v.png"
+    border          = { 0, 0, 0, 0 }
+    stretch         = TRUE
+    orientation     = VERTICAL
+}
+}
+
+}
+
+class "GtkScale" style "Scales"
+
+########################################################
+# GtkScrollbar
+########################################################
+
+style "Scrollbar" {
+
+ GtkRange::trough_border = 0
+ GtkVScale::slider_length = 16
+ GtkVScale::slider_width = 19
+ GtkHScale::slider_length = 17
+ GtkHScale::slider_width = 19
+ GtkRange::slider_width = 15
+ GtkRange::stepper_size = 15
+ GtkScrollbar::min_slider_length = 30
+
+engine "pixmap" {
+
+image {
+    function        = BOX
+    recolorable     = TRUE
+    detail          = "trough"
+    file            = "IMG/Scroll/slider-v.png"
+    border          = { 0,0,39,39}
+    stretch         = TRUE
+    orientation     = VERTICAL
+}
+
+image {
+    function        = BOX
+    recolorable     = TRUE
+    detail          = "trough"
+    file            = "IMG/Scroll/slider-h.png"
+    border          = { 39,39,0,0 }
+    stretch         = TRUE
+    orientation     = HORIZONTAL
+}
+
+image {
+    function        = SLIDER
+    recolorable     = TRUE
+    file            = "IMG/Scroll/bar-h.png"
+    border          = { 2,2,2,2 }
+    stretch         = TRUE
+    orientation     = HORIZONTAL
+}
+
+image {
+    function        = SLIDER
+    recolorable     = TRUE
+    file            = "IMG/Scroll/bar-v.png"
+    border          = { 2,2,2,2 }
+    stretch         = TRUE
+    orientation     = VERTICAL
+}
+
+image {
+    function        = BOX
+    recolorable     = TRUE
+    file            = "IMG/Colors/transparent.png"
+    border          = {0,0,0,0}
+    stretch         = TRUE
+}
+
+image  {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= NORMAL
+	overlay_file	= "IMG/Scroll/up.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= UP
+}
+      
+image  {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= NORMAL
+	overlay_file	= "IMG/Scroll/down.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= DOWN
+}
+      
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= NORMAL
+	overlay_file	= "IMG/Scroll/left.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= LEFT
+}
+      
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= NORMAL
+	overlay_file	= "IMG/Scroll/right.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= RIGHT
+}
+        
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= PRELIGHT
+	overlay_file	= "IMG/Scroll/up-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= UP
+}
+
+image  {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= PRELIGHT
+	overlay_file	= "IMG/Scroll/down-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= DOWN
+}
+
+image  {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= PRELIGHT
+	overlay_file	= "IMG/Scroll/left-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= LEFT
+}
+      
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= PRELIGHT
+	overlay_file	= "IMG/Scroll/right-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= RIGHT
+}
+
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= INSENSITIVE
+	overlay_file	= "IMG/Scroll/up-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= UP
+}
+
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	state		=INSENSITIVE
+	overlay_file	= "IMG/Scroll/down-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= DOWN
+}
+      
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= INSENSITIVE
+	overlay_file	= "IMG/Scroll/left-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= LEFT
+}
+      
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	state		= INSENSITIVE
+	overlay_file	= "IMG/Scroll/right-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= RIGHT
+}
+
+image  {
+	function	= ARROW
+	recolorable	= TRUE
+	shadow		= IN
+	overlay_file	= "IMG/Scroll/up-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= UP
+}
+      
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	shadow		= IN
+	overlay_file	= "IMG/Scroll/down-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= DOWN
+}
+      
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	shadow		= IN
+	overlay_file	= "IMG/Scroll/left-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= LEFT
+}
+      
+image {
+	function	= ARROW
+	recolorable	= TRUE
+	shadow		= IN
+	overlay_file	= "IMG/Scroll/right-pre.png"
+	overlay_border	= {0,0,0,0}
+	overlay_stretch	= FALSE
+	arrow_direction	= RIGHT
+}    
+
+}
+}
+
+class "GtkScrollbar" style "Scrollbar"
+
+########################################################
+# GtkStatusbar
+########################################################
+
+style "StatusBar" = "rgb4u-default" {
+       
+        fg[NORMAL]        = "#5c5c5c" # Basic Status-Bar Text color
+        
+        text[NORMAL]      = "#5c5c5c" # % Value 
+        text[PRELIGHT]    = "#5c5c5c" # PX:hover 
+        text[SELECTED]    = "#5c5c5c" # Highlited Text 
+        text[INSENSITIVE] = "#000000" # Unknow Black
+        text[ACTIVE]      = "#5c5c5c" # Unknow
+
+        base[NORMAL]      = "#d6d6d6" # Top and Bottom Borders for % value
+        base[PRELIGHT]    = "#d6d6d6" # Unknow
+        base[SELECTED]    = "#b8b8b8" # Highlited Text BG
+        base[INSENSITIVE] = "#000000" # Unknow Black
+        base[ACTIVE]      = "#b8b8b8" # Highlited Text BG and unclicked window
+        
+}
+widget "*GimpStatusbar.*" style "StatusBar"
+
+###########################################
+# UNIT COMBO-BOX - In Status-Bar PX values
+###########################################
+
+# style "UnitComboBox" = "rgb4u-default" {      
+#        bg[NORMAL]        = "#5c5c5c"       
+# }
+#
+# widget "*GimpDisplayShell.*GimpUnitComboBox*" style "UnitComboBox"
+
+###########################################
+# SCALE COMBO-BOX - In Status-Bar % values
+###########################################
+
+# style "ScaleComboBox" = "rgb4u-default" {      
+#        bg[NORMAL]        = "#5c5c5c"       
+# }
+#
+# widget "*GimpDisplayShell.*GimpScaleComboBox*" style "ScaleComboBox"
+
+###########################################
+# EVENT-BOX - Status-Bar corner Icons
+###########################################
+# 4 Icons BG for Status-Bar window :
+# Access the image menu - Top Left
+# Zoom Image - Top Right
+# Toggle Quick Mask - Left Bottom
+# Navigate the image - Right Bottom
+#
+style "EventBox"
+{
+        bg[NORMAL]        = "#d6d6d6" # 
+        bg[PRELIGHT]      = "#d6d6d6" # 
+        bg[SELECTED]      = "#d6d6d6" # 
+        bg[INSENSITIVE]   = "#d6d6d6" # 
+        bg[ACTIVE]        = "#d6d6d6" # 
+}
+
+widget "*GimpDisplayShell.*GtkEventBox*" style "EventBox"
+
+########################################################
+# GtkTextView
+########################################################
+
+style "rgb4u-Text" = "rgb4u-default"
+{
+ bg[NORMAL]="#191919" # Unknow
+}
+class "GtkTextView" style "rgb4u-Text"
+
+#Widgets that have not been defined yet
+class "GtkWidget" style "rgb4u-default"
+
+########################################################
+# GtkTool-Tips
+########################################################
+
+style "tooltips"
+{
+  bg[NORMAL] = "#dddddd" 
+  fg[NORMAL] = "#333333"
+}
+widget "gtk-tooltip*" style "tooltips"
+
+########################################################
+# GtkToolbar
+########################################################
+
+style "gimp-toolbox"
+{
+bg[NORMAL]  = "#d6d6d6"
+ 
+# Resizing Tool-Box to 1 Row BUG !!!
+# (On/Off x,y value and see, by using #)
+
+  xthickness = 2
+  ythickness = 2
+
+ GtkButton::inner-border = {0,0,0,0} # Tools icons borders (L,R,T,B)
+ GtkButton::focus-line_width = 1
+ GtkButton::focus-padding = 0 
+ 
+# TOOL-BUTTONS-SHADOWS :
+
+engine "pixmap" {
+
+image {
+	function = BOX
+	recolorable = TRUE
+	state = NORMAL
+	detail = "buttondefault"
+	shadow = IN
+	file = "IMG/Colors/transparent.png" # Button Normal
+	border = {6,6,6,6}
+	stretch = TRUE
+}
+
+image {
+	function = BOX
+	recolorable = TRUE
+	state = NORMAL
+	shadow = OUT
+	file = "IMG/Colors/transparent.png" # Button Normal
+	border = {6,6,6,6}
+	stretch = TRUE
+}
+
+image {
+	function = BOX
+	recolorable     = TRUE
+	state           = PRELIGHT
+	shadow          = IN
+	file            = "IMG/Colors/b8b8b8.png" # Button Prelight
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+	function = BOX
+	recolorable     = TRUE
+	state           = ACTIVE
+	shadow          = IN
+	file            = "IMG/Colors/b8b8b8.png" # Button Active
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+
+    function        = BOX
+	recolorable     = TRUE
+	state           = PRELIGHT
+	shadow          = OUT
+	file            = "IMG/Colors/b8b8b8.png" # Button Prelight
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+      
+image {
+    function        = BOX
+	recolorable     = TRUE
+	state           = NORMAL
+	shadow          = IN
+	file            = "IMG/Colors/transparent.png" # Button Flat
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+    function        = BOX
+	recolorable     = TRUE
+	state           = INSENSITIVE
+	shadow          = IN
+	file            = "IMG/Colors/transparent.png" # Button Flat
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+     function        = BOX
+	recolorable     = TRUE
+	state           = INSENSITIVE
+	shadow          = OUT
+	file            = "IMG/Colors/transparent.png" # Button Flat
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image {
+    function        = BOX
+	recolorable     = TRUE
+	state           = SELECTED
+	shadow          = IN
+	file            = "IMG/Colors/b8b8b8.png" # Button Push
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+
+image  {
+    function        = BOX
+	recolorable     = TRUE
+	state           = ACTIVE
+	shadow          = IN
+	file            = "IMG/Colors/b8b8b8.png" # Button Active
+	border          = {6,6,6,6}
+	stretch         = TRUE
+}
+}
+
+}
+widget "*GimpToolPalette*" style "gimp-toolbox"
+
+########################################################
+# GtkTreeView -
+# In Open File, Quit : Places, Name, Size headers
+# In Prefer. > Themes : Theme, Folder headers
+########################################################
+
+style "TreeView" {
+    fg[NORMAL]        = "#191919" #  
+    fg[PRELIGHT]      = "#191919" #  
+    fg[SELECTED]      = "#191919" #  
+    fg[INSENSITIVE]   = "#191919" #  
+    fg[ACTIVE]        = "#191919" #  
+                
+    text[NORMAL]      = "#5c5c5c" #  
+    text[PRELIGHT]    = "#5c5c5c" #  
+    text[SELECTED]    = "#5c5c5c" #  
+    text[INSENSITIVE] = "#5c5c5c" #  
+    text[ACTIVE]      = "#5c5c5c" # 
+}
+        
+widget_class "*TreeView.*" style "TreeView"
+
+########################################################
+# WILBER LOGO TURN ON/OFF :
+########################################################
+# Small Wilber in Tool-Bar
+############################################
+style "SmallWilber"
+{ fg[NORMAL]        = "#d6d6d6"}
+class "GtkFrame" style "SmallWilber" 
+########################################################
+# Big Wilber in Main-Window
+############################################
+style "gimp-display-style" = "BigWilber"
+{fg[NORMAL]   = "#8a8a8a"} # 8a8a8a = 888888 +2 to H in HSB color value                       
+widget "*GimpDisplayShell.*" style "BigWilber"

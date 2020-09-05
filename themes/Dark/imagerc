@@ -1,0 +1,396 @@
+########################################################################
+# CS6-black-1 | GIMP Theme created by rgb4u.com
+########################################################################
+#  COPYRIGHT INFORMATION
+########################################################################
+# Craeated by : rgb4u
+# Copyright (c) June 02, 2014 Gabriela W.
+#
+# No part of this code and graphic elements can be reproduced, distributed,
+# or transmitted in any form or by any means, including photocopying,
+# recording, or other electronic or mechanical methods, without the
+#  prior written permission of the publisher. 
+#
+# YOU CAN USE THESE THEME - for your personal, and commercial projects
+########################################################################
+# CONTACT : rgb4u@rgb4u.com
+########################################################################
+# INFO
+########################################################################
+# This file will replace prebuilt common menu/tool-bar/tool-panel
+# items and corresponding icons
+# The purpose of this theme was to completely change out every GIMP icon
+# and make it beautiful
+########################################################################
+# GIMP-ICONS 
+########################################################################
+style "gimp-icons"
+{
+########################################################################
+# START - GROUP 1 > GTK-ICONS | A >> Z
+########################################################################
+#### AB ####
+stock["gtk-about"] = {{"IMG/Icons/gtk_stock_about.png"}}
+stock["gtk-add"] = {{"IMG/Icons/gtk_stock_add.png"}}
+stock["gtk-apply"] = {{"IMG/Icons/gtk_stock_apply.png"}}
+stock["gtk-bold"] = {{"IMG/Icons/gtk_stock_bold.png"}}
+#### C ####
+stock["gtk-cancel"] = {{"IMG/Icons/gtk_stock_cancel.png"}}
+stock["gtk-cdrom"] = {{"IMG/Icons/gtk_stock_cdrom.png"}}
+stock["gtk-clear"] = {{"IMG/Icons/gtk_stock_clear.png"}}
+stock["gtk-close"] = {{"IMG/Icons/gtk_stock_close.png"}} 
+stock["gtk-convert"] = {{"IMG/Icons/gtk_stock_convert.png"}}    
+stock["gtk-copy"] = {{"IMG/Icons/gtk_stock_copy.png"}}    
+stock["gtk-cut"] = {{"IMG/Icons/gtk_stock_cut.png"}}  
+#### D ####  
+stock["gtk-delete"] = {{"IMG/Icons/gtk_stock_delete.png"}} 
+stock["gtk-dialog-error"] = {{"IMG/Icons/stock-error-64.png"}}
+stock["gtk-dialog-info"] = {{"IMG/Icons/stock-info-64.png"}}
+stock["gtk-dialog-question"] = {{"IMG/Icons/stock-question-64.png"}}
+stock["gtk-dialog-warning"] = {{"IMG/Icons/stock-warning-64.png"}}  
+stock["gtk-directory"] ={{"IMG/Icons/gtk_stock_open.png"}}  
+#### EF #### 
+stock["gtk-edit"] ={{"IMG/Icons/stock-edit-16.png"}}  
+stock["gtk-execute"] = {{"IMG/Icons/gtk_stock_execute.png"}}    
+stock["gtk-find"] = {{ "IMG/Icons/gtk_stock_find.png" }}   
+stock["gtk-find-and-replace"] = {{"IMG/Icons/gtk_stock_find_and_replace.png"}}    
+stock["gtk-floppy"] = {{"IMG/Icons/gtk_stock_floppy.png"}}  
+#### G ####   
+stock["gtk-go-back"] = {{"IMG/Icons/gtk_stock_go_back.png"}}
+stock["gtk-go-down"] = {{"IMG/Icons/gtk_stock_go_down.png"}}    
+stock["gtk-go-forward"] = {{"IMG/Icons/gtk_stock_go_forward.png"}}    
+stock["gtk-go-up"] = {{"IMG/Icons/gtk_stock_go_up.png"}}    
+stock["gtk-goto-bottom"] = {{"IMG/Icons/gtk_stock_goto_bottom.png"}}    
+stock["gtk-goto-first"] = {{"IMG/Icons/gtk_stock_goto_first.png"}}   
+stock["gtk-goto-last"] = {{"IMG/Icons/gtk_stock_goto_last.png"}}    
+stock["gtk-goto-top"] = {{"IMG/Icons/gtk_stock_goto_top.png"}} 
+#### HI ####   
+stock["gtk-help"] = {{"IMG/Icons/stock-question-64.png"}}     
+stock["gtk-home"] = {{ "IMG/Icons/gtk_stock_home.png" }}    
+stock["gtk-indent"] = {{"IMG/Icons/stock_text_indent_22.png"}} 
+stock["gtk-index"] = {{"IMG/Icons/gtk_stock_index.png"}} 
+stock["gtk-info"] = {{"IMG/Icons/stock-info-64.png"}}   
+stock["gtk-italic"] = {{"IMG/Icons/gtk_stock_italic.png"}}  
+#### J ####   
+stock["gtk-jump-to"] = {{"IMG/Icons/gtk_stock_jump_to.png"}}   
+stock["gtk-justify-center"] = {{"IMG/Icons/gtk_stock_justify_center.png"}}  
+stock["gtk-justify-fill"] = {{"IMG/Icons/gtk_stock_justify_fill.png"}}   
+stock["gtk-justify-left"] = {{"IMG/Icons/gtk_stock_justify_left.png"}}  
+stock["gtk-justify-right"] = {{"IMG/Icons/gtk_stock_justify_right.png"}} 
+#### MN ####  
+stock["gtk-manage-settings"] ={{"IMG/Icons/stock-edit-16.png"}} 
+stock["gtk-missing-image"] = {{"IMG/Icons/gtk_stock_missing_image.png"}}    
+stock["gtk-new"] = {{"IMG/Icons/gtk_stock_new.png"}}    
+stock["gtk-no"] = {{"IMG/Icons/gtk_stock_no.png"}}  
+#### O ####  
+stock["gtk-ok"] = {{"IMG/Icons/gtk_stock_ok.png"}}   
+stock["gtk-open"] = {{"IMG/Icons/gtk_stock_open.png"}}  
+
+#### P #### 
+stock["gtk-page-setup"] = {{"IMG/Icons/gtk_stock_page_setup.png"}}    
+stock["gtk-paste"] = {{"IMG/Icons/gtk_stock_paste.png"}}   
+stock["gtk-preferences"] = {{"IMG/Icons/gtk_stock_preferences.png"}}    
+stock["gtk-print"] = {{"IMG/Icons/gtk_stock_print.png"}}  
+stock["gtk-print-preview"] = {{"IMG/Icons/gtk_stock_print_preview.png"}}  
+stock["gtk-properties"] = {{"IMG/Icons/gtk_stock_properties.png"}}
+#### QR #### 
+stock["gtk-quit"] = {{"IMG/Icons/gtk_stock_quit.png"}}
+stock["gtk-redo"] = {{"IMG/Icons/gtk_stock_redo.png"}}
+stock["gtk-refresh"] = {{"IMG/Icons/stock-refresh.png"}}
+stock["gtk-remove"] = {{"IMG/Icons/gtk_stock_remove.png"}}
+stock["gtk-revert-to-saved"] = {{"IMG/Icons/gtk_stock_revert_to_saved.png"}}
+#### S #### 
+stock["gtk-save"] = {{"IMG/Icons/gtk_stock_save.png"}}
+stock["gtk-save-as"] = {{"IMG/Icons/gtk_stock_save_as.png"}} 
+stock["gtk-select-color"] = {{"IMG/Icons/gtk-select-color.png"}}  
+stock["gtk-select-font"] = {{"IMG/Icons/gtk_stock_select_font.png"}} 
+stock["gtk-sort-ascending"] = {{"IMG/Icons/gtk_stock_sort_ascending.png"}}  
+stock["gtk-sort-descending"] = {{"IMG/Icons/gtk_stock_sort_descending.png"}} 
+stock["gtk-spell-check"] = {{"IMG/Icons/gtk_stock_spell_check.png"}} 
+stock["gtk-stop"] = {{"IMG/Icons/gtk_stock_stop.png"}} 
+stock["gtk-strikethrough"] = {{"IMG/Icons/gtk_stock_strikethrough.png"}} 
+#### UY ####  
+stock["gtk-undelete"] = {{"IMG/Icons/gtk_stock_undelete.png"}} 
+stock["gtk-underline"] = {{"IMG/Icons/gtk_stock_underline.png"}} 
+stock["gtk-undo"] = {{"IMG/Icons/gtk_stock_undo.png"}} 
+stock["gtk-yes"] = {{"IMG/Icons/gtk_stock_yes.png"}} 
+########################################################################
+# END - GROUP 1 > GTK-ICONS 
+######################################################################## 
+#
+########################################################################
+# START - GROUP 2 > GIMP-ICONS | A >> Z
+########################################################################
+#### A #### 
+stock["gimp-anchor"] = {{"IMG/Icons/stock-anchor-16.png"}}
+#### C #### 
+stock["gimp-cap-butt"] = {{"IMG/Icons/stock-cap-butt-16.png"}}
+stock["gimp-cap-round"] = {{ "IMG/Icons/stock-cap-round-16.png"}}
+stock["gimp-cap-square"] = {{"IMG/Icons/stock-cap-square-16.png"}}
+stock["gimp-center"] = {{ "IMG/Icons/stock-center-24.png"}}
+stock["gimp-channel"] = {{ "IMG/Icons/stock-channel-16.png"}}
+stock["gimp-channel-alpha"] = {{"IMG/Icons/stock-channel-alpha-16.png"}}
+stock["gimp-channel-blue"] = {{"IMG/Icons/stock-channel-blue-16.png"}}
+stock["gimp-channel-gray"] = {{"IMG/Icons/stock-channel-gray-16.png"}}
+stock["gimp-channel-green"] = {{"IMG/Icons/stock-channel-green-16.png"}}
+stock["gimp-channel-indexed"] = {{"IMG/Icons/stock-channel-indexed-16.png"}}
+stock["gimp-channel-red"] = {{"IMG/Icons/stock-channel-red-16.png"}}
+stock["gimp-channels"] = {{"IMG/Icons/stock-channels-16.png"}}
+stock["gimp-char-picker"] = {{"IMG/Icons/stock-char-picker-22.png"}}
+stock["gimp-close"] = {{"IMG/Icons/stock-close-12.png"}}
+stock["gimp-colormap"] = {{"IMG/Icons/stock-colormap-16.png"}}
+stock["gimp-color-picker-black"] = {{"IMG/Icons/stock-color-picker-black-18.png"}}
+stock["gimp-color-picker-grey"] = {{"IMG/Icons/stock-color-picker-grey-18.png"}}
+stock["gimp-color-picker-white"] = {{"IMG/Icons/stock-color-picker-white-18.png"}}
+stock["gimp-color-pick-from-screen"] = {{"IMG/Icons/stock-color-pick-from-screen-16.png"}}
+stock["gimp-color-triangle"] = {{"IMG/Icons/stock-color-triangle-16.png"}}
+stock["gimp-controller"] = {{"IMG/Icons/stock-controller-16.png"}}
+stock["gimp-controller-keyboard"] = {{"IMG/Icons/stock-controller-keyboard-16.png"}}
+stock["gimp-controller-linux-input"] = {{"IMG/Icons/stock-controller-linux-input-16.png"}}
+stock["gimp-controller-midi"] = {{ "IMG/Icons/stock-controller-midi-16.png"}}
+stock["gimp-controller-wheel"] = {{"IMG/Icons/stock-controller-wheel-16.png"}}
+stock["gimp-convert-grayscale"] = {{"IMG/Icons/stock-convert-grayscale-16.png"}}
+stock["gimp-convert-rgb"] = {{"IMG/Icons/stock-convert-rgb-16.png"}}
+stock["gimp-cursor"] = {{"IMG/Icons/stock-cursor-16.png"}}
+stock["gimp-curve-free"] = {{"IMG/Icons/stock-curve-free-16.png"}}
+stock["gimp-curve-smooth"] = {{"IMG/Icons/stock-curve-smooth-16.png"}}
+#### D #### 
+stock["gimp-default-colors"] = {{"IMG/Icons/stock-default-colors-12.png"}}
+stock["gimp-device-status"] = {{"IMG/Icons/stock-device-status-16.png"}}
+stock["gimp-display-filter"] = {{"IMG/Icons/stock-display-filter-16.png"}}
+stock["gimp-display-filter-colorblind"] = {{"IMG/Icons/stock-display-filter-colorblind-16.png"}}
+stock["gimp-display-filter-contrast"] = {{ "IMG/Icons/stock-display-filter-contrast-16.png"}}
+stock["gimp-display-filter-lcms"] = {{ "IMG/Icons/stock-display-filter-lcms-16.png"}}
+stock["gimp-display-filter-proof"] = {{ "IMG/Icons/stock-display-filter-proof-16.png"}}
+stock["gimp-duplicate"] = {{"IMG/Icons/stock-duplicate-16.png"}}
+stock["gimp-dynamics"] = {{"IMG/Icons/stock-dynamics-16.png"}}
+#### E #### 
+stock["gimp-edit"] = {{"IMG/Icons/stock-edit-16.png"}}
+#### F #### 
+stock["gimp-flip-horizontal"] = {{"IMG/Icons/stock-flip-horizontal-16.png"}}
+stock["gimp-flip-vertical"] = {{"IMG/Icons/stock-flip-vertical-16.png"}}
+stock["gimp-floating-selection"] = {{"IMG/Icons/stock-floating-selection-24.png"}}
+stock["gimp-frame"] = {{"IMG/Icons/stock-frame-64.png"}}
+#### G ####
+stock["gimp-gegl"] = {{"IMG/Icons/stock-gegl-22.png"}}
+stock["gimp-gradient-bilinear"] = {{"IMG/Icons/stock-gradient-bilinear-16.png"}}
+stock["gimp-gradient-conical-asymmetric"] = {{"IMG/Icons/stock-gradient-conical-asymmetric-16.png"}}
+stock["gimp-gradient-conical-symmetric"] = {{"IMG/Icons/stock-gradient-conical-symmetric-16.png"}}
+stock["gimp-gradient-linear"] = {{"IMG/Icons/stock-gradient-linear-16.png"}}
+stock["gimp-gradient-radial"] = {{"IMG/Icons/stock-gradient-radial-16.png"}}
+stock["gimp-gradient-shapeburst-angular"] = {{"IMG/Icons/stock-gradient-shapeburst-angular-16.png"}}
+stock["gimp-gradient-shapeburst-dimpled"] = {{"IMG/Icons/stock-gradient-shapeburst-dimpled-16.png"}}
+stock["gimp-gradient-shapeburst-spherical"] = {{"IMG/Icons/stock-gradient-shapeburst-spherical-16.png"}}
+stock["gimp-gradient-spiral-anticlockwise"] = {{"IMG/Icons/stock-gradient-spiral-anticlockwise-16.png"}}
+stock["gimp-gradient-spiral-clockwise"] = {{"IMG/Icons/stock-gradient-spiral-clockwise-16.png"}}
+stock["gimp-gradient-square"] = {{"IMG/Icons/stock-gradient-square-16.png"}}
+stock["gimp-gravity-east"] = {{"IMG/Icons/stock-gravity-east-24.png"}}
+stock["gimp-gravity-north"] = {{"IMG/Icons/stock-gravity-north-24.png"}}
+stock["gimp-gravity-north-east"] = {{"IMG/Icons/stock-gravity-north-east-24.png"}}
+stock["gimp-gravity-north-west"] = {{"IMG/Icons/stock-gravity-north-west-24.png"}}
+stock["gimp-gravity-south"] = {{"IMG/Icons/stock-gravity-south-24.png"}}
+stock["gimp-gravity-south-east"] = {{ "IMG/Icons/stock-gravity-south-east-24.png"}}
+stock["gimp-gravity-south-west"] = {{"IMG/Icons/stock-gravity-south-west-24.png"}}
+stock["gimp-gravity-west"] = {{"IMG/Icons/stock-gravity-west-24.png"}}
+stock["gimp-grid"] = {{"IMG/Icons/stock-grid-16.png"}}
+stock["gimp-hcenter"] = {{"IMG/Icons/stock-hcenter-24.png"}}
+stock["gimp-hchain"] = {{"IMG/Icons/stock-hchain-24.png"}}
+stock["gimp-hchain-broken"] = {{"IMG/Icons/stock-hchain-broken-24.png"}}
+stock["gimp-histogram"] = {{"IMG/Icons/stock-histogram-16.png"}}
+stock["gimp-histogram-linear"] = {{"IMG/Icons/stock-histogram-linear-16.png"}}
+stock["gimp-histogram-logarithmic"] = {{"IMG/Icons/stock-histogram-logarithmic-16.png"}}
+
+stock["gimp-image"] =
+{
+   { "IMG/Icons/stock-image-16.png", *, *, "gtk-button" },
+   { "IMG/Icons/stock-image-16.png", *, *, *            },
+   { "IMG/Icons/stock-image-24.png", *, *, "gtk-button" },
+   { "IMG/Icons/stock-image-24.png", *, *, *            },
+   { "IMG/Icons/stock-image-32.png", *, *, "gtk-button" },
+   { "IMG/Icons/stock-image-32.png", *, *, *            },
+   { "IMG/Icons/stock-image-48.png", *, *, "gtk-button" },
+   { "IMG/Icons/stock-image-48.png", *, *, *            }      
+}
+
+stock["gimp-images"] = {{"IMG/Icons/stock-images-16.png"}}
+
+#### IJ ####
+stock["gimp-info"] = {{"IMG/Icons/stock-info-64.png"}}
+stock["gimp-input-device"] =
+{
+   { "IMG/Icons/stock-input-device-16.png", *, *, "gtk-button" },
+   { "IMG/Icons/stock-input-device-16.png", *, *, *            },
+   { "IMG/Icons/stock-input-device-24.png", *, *, "gtk-button" },
+   { "IMG/Icons/stock-input-device-24.png", *, *, *            }
+}
+
+stock["gimp-invert"] = {{"IMG/Icons/stock-invert-16.png"}}
+stock["gimp-join-bevel"] = {{"IMG/Icons/stock-join-bevel-16.png"}}
+stock["gimp-join-miter"] = {{ "IMG/Icons/stock-join-miter-16.png"}}
+stock["gimp-join-round"] = {{"IMG/Icons/stock-join-round-16.png"}}
+#### L ####
+stock["gimp-landscape"] = {{"IMG/Icons/stock-landscape-16.png"}}
+stock["gimp-layer"] = {{"IMG/Icons/stock-layer-16.png"}}
+stock["gimp-layer-mask"] = {{"IMG/Icons/stock-layer-mask-16.png"}}
+stock["gimp-layers"] = {{"IMG/Icons/stock-layers-16.png"}}
+stock["gimp-layer-to-imagesize"] = {{"IMG/Icons/stock-layer-to-imagesize-16.png"}}
+stock["gimp-letter-spacing"] = {{"IMG/Icons/stock-letter-spacing-22.png"}}
+stock["gimp-line-spacing"] = {{"IMG/Icons/stock-line-spacing-22.png"}}
+stock["gimp-linked"] =
+{
+   { "IMG/Icons/stock-linked-12.png", *, *, "gtk-button" },
+   { "IMG/Icons/stock-linked-12.png", *, *, *            },
+   { "IMG/Icons/stock-linked-20.png", *, *, "gtk-button" },
+   { "IMG/Icons/stock-linked-20.png", *, *, *            }
+}
+stock["gimp-list"] = {{"IMG/Icons/stock-list-16.png"}}
+#### MN ####
+stock["gimp-menu-left"] = {{"IMG/Icons/stock-menu-12.png"}}
+stock["gimp-menu-right"] = {{"IMG/Icons/stock-menu-12.png"}}
+stock["gimp-merge-down"] = {{"IMG/Icons/stock-merge-down-16.png"}}
+stock["gimp-move-to-screen"] = {{"IMG/Icons/stock-move-to-screen-24.png"}}
+stock["gimp-navigation"] = {{"IMG/Icons/stock-navigation-16.png"}}
+#### P ####
+stock["gimp-paste-as-new"] = {{"IMG/Icons/stock-paste-as-new-16.png"}}
+stock["gimp-paste-into"] ={{"IMG/Icons/stock-paste-into-16.png"}}
+stock["gimp-path"] = {{"IMG/Icons/stock-path-22.png"}}
+stock["gimp-paths"] = {{"IMG/Icons/stock-paths-22.png"}}
+stock["gimp-path-stroke"] = {{"IMG/Icons/stock-path-stroke-16.png"}}
+stock["gimp-plugin"] = {{"IMG/Icons/stock-plugin-16.png"}}
+stock["gimp-portrait"] = {{"IMG/Icons/stock-portrait-16.png"}}
+stock["gimp-print-resolution"] = {{"IMG/Icons/stock-print-resolution-24.png"}}
+#### QR ####
+stock["gimp-question"] = {{"IMG/Icons/stock-question-64.png"}}
+stock["gimp-quick-mask-off"] = {{"IMG/Icons/stock-quick-mask-off-12.png"}}
+stock["gimp-quick-mask-on"] = {{"IMG/Icons/stock-quick-mask-on-12.png"}}
+stock["gimp-reset"] = {{"IMG/Icons/stock-reset-22.png"}}
+stock["gimp-reshow-filter"] = {{"IMG/Icons/stock-reshow-filter-16.png"}}
+stock["gimp-resize"] = {{"IMG/Icons/stock-resize-16.png"}}
+stock["gimp-restore"] = {{"IMG/Icons/stock-restore-22.png"}}
+stock["gimp-rotate-90"] = {{"IMG/Icons/stock-rotate-90-16.png"}}
+stock["gimp-rotate-180"] = {{"IMG/Icons/stock-rotate-180-16.png"}}
+stock["gimp-rotate-270"] = {{"IMG/Icons/stock-rotate-270-16.png"}}
+#### S ####
+stock["gimp-sample-point"] = {{"IMG/Icons/stock-sample-point-24.png"}}
+stock["gimp-save"] = {{"IMG/Icons/stock-save-22.png"}}
+stock["gimp-scale"] = {{ "IMG/Icons/stock-scale-16.png" }}
+stock["gimp-selection"] = {{"IMG/Icons/stock-selection-16.png"}}
+stock["gimp-selection-add"] = {{"IMG/Icons/stock-selection-add-16.png"}}
+stock["gimp-selection-all"] = {{"IMG/Icons/stock-selection-all-16.png"}}
+stock["gimp-selection-border"] = {{"IMG/Icons/stock-selection-border-16.png"}}
+stock["gimp-selection-grow"] = {{"IMG/Icons/stock-selection-grow-16.png"}}
+stock["gimp-selection-intersect"] = {{"IMG/Icons/stock-selection-intersect-16.png"}}
+stock["gimp-selection-none"] = {{"IMG/Icons/stock-selection-none-16.png"}}
+stock["gimp-selection-replace"] = {{ "IMG/Icons/stock-selection-replace-16.png"}}
+stock["gimp-selection-shrink"] = {{"IMG/Icons/stock-selection-shrink-16.png"}}
+stock["gimp-selection-stroke"] = {{"IMG/Icons/stock-selection-stroke-16.png"}}
+stock["gimp-selection-subtract"] = {{"IMG/Icons/stock-selection-subtract-16.png"}}
+stock["gimp-selection-to-channel"] = {{"IMG/Icons/stock-selection-to-channel-16.png"}}
+stock["gimp-selection-to-path"] = {{"IMG/Icons/stock-selection-to-path-16.png"}}
+stock["gimp-shape-circle"] = {{"IMG/Icons/stock-shape-circle-16.png"}}
+stock["gimp-shape-diamond"] = {{"IMG/Icons/stock-shape-diamond-16.png"}}
+stock["gimp-shape-square"] = {{"IMG/Icons/stock-shape-square-16.png"}}
+stock["gimp-swap-colors"] = {{"IMG/Icons/stock-swap-colors-12.png"}}
+#### T ####
+stock["gimp-template"] = {{"IMG/Icons/stock-template-24.png"}}
+stock["gimp-text-dir-ltr"] = {{"IMG/Icons/stock-text-dir-ltr-24.png"}}
+stock["gimp-text-dir-rtl"] = {{ "IMG/Icons/stock-text-dir-rtl-24.png"}}
+stock["gimp-text-layer"] = {{"IMG/Icons/stock-text-layer-16.png"}}
+stock["gimp-texture"] = {{"IMG/Icons/stock-texture-16.png"}}
+########################################################################
+# START - GROUP 2b > TOOL-ICONS | A >> Z
+########################################################################
+#### AB ####
+stock["gimp-tool-airbrush"] = {{"IMG/Icons/stock-tool-airbrush-22.png"}}
+stock["gimp-tool-align"] = {{"IMG/Icons/stock-tool-align-22.png"}}
+stock["gimp-tool-blend"] = {{"IMG/Icons/stock-tool-blend-22.png"}}
+stock["gimp-tool-blur"] = {{"IMG/Icons/stock-tool-blur-22.png"}}
+stock["gimp-tool-brightness-contrast"] = {{"IMG/Icons/stock-tool-brightness-contrast-22.png"}}
+stock["gimp-tool-bucket-fill"] = {{"IMG/Icons/stock-tool-bucket-fill-22.png"}}
+stock["gimp-tool-by-color-select"] = {{"IMG/Icons/stock-tool-by-color-select-22.png"}}
+#### C ####
+stock["gimp-tool-cage"] = {{"IMG/Icons/stock-tool-cage-22.png"}}
+stock["gimp-tool-clone"] = {{"IMG/Icons/stock-tool-clone-22.png"}}
+stock["gimp-tool-color-balance"] = {{"IMG/Icons/stock-tool-color-balance-22.png"}}
+stock["gimp-tool-colorize"] = {{"IMG/Icons/stock-tool-colorize-22.png"}}
+stock["gimp-tool-color-picker"] = {{"IMG/Icons/stock-tool-color-picker-22.png"}}
+stock["gimp-tool-crop"] = {{"IMG/Icons/stock-tool-crop-22.png"}}
+stock["gimp-tool-curves"] = {{"IMG/Icons/stock-tool-curves-22.png"}}
+#### DE ####
+stock["gimp-tool-desaturate"] = {{"IMG/Icons/stock-tool-desaturate-22.png"}}
+stock["gimp-tool-dodge"] = {{"IMG/Icons/stock-tool-dodge-22.png"}}
+stock["gimp-tool-ellipse-select"] = {{"IMG/Icons/stock-tool-ellipse-select-22.png"}}
+stock["gimp-tool-eraser"] = {{"IMG/Icons/stock-tool-eraser-22.png"}}
+#### FH ####
+stock["gimp-tool-flip"] = {{"IMG/Icons/stock-tool-flip-22.png"}}
+stock["gimp-tool-foreground-select"] = {{"IMG/Icons/stock-tool-foreground-select-22.png"}}
+stock["gimp-tool-free-select"] = {{"IMG/Icons/stock-tool-free-select-22.png"}}
+stock["gimp-tool-fuzzy-select"] = {{"IMG/Icons/stock-tool-fuzzy-select-22.png"}}
+stock["gimp-tool-heal"] = {{"IMG/Icons/stock-tool-heal-22.png"}}
+stock["gimp-tool-hue-saturation"] = {{"IMG/Icons/stock-tool-hue-saturation-22.png"}}
+#### IL ####
+stock["gimp-tool-ink"] = {{"IMG/Icons/stock-tool-ink-22.png"}}
+stock["gimp-tool-iscissors"] = {{"IMG/Icons/stock-tool-iscissors-22.png"}}
+stock["gimp-tool-levels"] = {{"IMG/Icons/stock-tool-levels-22.png"}}
+#### MO ####
+stock["gimp-tool-measure"] = {{"IMG/Icons/stock-tool-measure-22.png"}}
+stock["gimp-tool-move"] = {{"IMG/Icons/stock-tool-move-22.png"}}
+stock["gimp-tool-options"] = {{"IMG/Icons/stock-tool-options-16.png"}}
+#### P ####
+stock["gimp-pattern"] = {{"IMG/Icons/stock-pattern-16.png"}}
+stock["gimp-tool-paintbrush"] = {{"IMG/Icons/stock-tool-paintbrush-22.png"}}
+stock["gimp-tool-path"] = {{"IMG/Icons/stock-tool-path-22.png"}}
+stock["gimp-tool-pencil"] = {{"IMG/Icons/stock-tool-pencil-22.png"}}
+stock["gimp-tool-perspective"] = {{"IMG/Icons/stock-tool-perspective-22.png"}}
+stock["gimp-tool-perspective-clone"] = {{"IMG/Icons/stock-tool-perspective-clone-22.png"}}
+stock["gimp-tool-posterize"] = {{"IMG/Icons/stock-tool-posterize-22.png"}}
+stock["gimp-tool-preset"] = {{"IMG/Icons/stock-tool-preset-16.png"}}
+#### R ####
+stock["gimp-tool-rect-select"] = {{"IMG/Icons/stock-tool-rect-select-22.png"}}
+stock["gimp-tool-rotate"] = {{ "IMG/Icons/stock-tool-rotate-22.png"}}
+stock["gimp-tool-scale"] = {{"IMG/Icons/stock-tool-scale-22.png"}}
+#### S ####
+stock["gimp-tool-shear"] = {{"IMG/Icons/stock-tool-shear-22.png"}}
+stock["gimp-tool-smudge"] = {{"IMG/Icons/stock-tool-smudge-22.png"}}
+#### TZ ####
+stock["gimp-toilet-paper"] = {{"IMG//Icons/stock-toilet-paper-16.png"}}
+stock["gimp-tool-text"] = {{"IMG/Icons/stock-tool-text-22.png"}}
+stock["gimp-tool-threshold"] = {{"IMG/Icons/stock-tool-threshold-22.png"}}
+stock["gimp-tool-zoom"] = {{"IMG/Icons/stock-tool-zoom-22.png"}}
+
+########################################################################
+# END - GROUP 2b > TOOL-ICONS
+########################################################################  
+
+stock["gimp-transparency"] = {{"IMG/Icons/stock-transparency-24.png"}}
+#### UV ####
+stock["gimp-undo-history"] = {{"IMG/Icons/stock-undo-history-24.png"}}
+stock["gimp-user-manual"] ={{"IMG/Icons/stock-user-manual-64.png"}}
+stock["gimp-vcenter"] = {{"IMG/Icons/stock-vcenter-24.png"}}
+stock["gimp-vchain"] = {{"IMG/Icons/stock-vchain-24.png"}}
+stock["gimp-vchain-broken"] = {{"IMG/Icons/stock-vchain-broken-24.png"}}
+stock["gimp-video"] = {{"IMG/Icons/stock-video-24.png"}}
+stock["gimp-visible"] = {{"IMG/Icons/stock-eye-20.png"}}
+#### W ####
+stock["gimp-warning"] = {{"IMG/Icons/stock-warning-24.png"}}
+stock["gimp-web"] = {{"IMG/Icons/stock-web-24.png"}}
+stock["gimp-wilber"] = {{"IMG/Icons/stock-wilber-64.png"}}
+stock["gimp-wilber-eek"] = {{"IMG/Icons/stock-wilber-eek-64.png"}}
+#### Z ####
+stock["gtk-zoom-100"] = {{"IMG//Icons/stock-zoom-100-16.png"}}
+stock["gtk-zoom-fit"] = {{"IMG//Icons/stock-zoom-fit-16.png"}}
+stock["gimp-zoom-follow-window"] = {{"IMG/Icons/stock-zoom-follow-window-12.png"}}
+stock["gtk-zoom-in"] = {{ "IMG//Icons/stock-zoom-in-16.png"}}
+stock["gtk-zoom-out"] = {{"IMG//Icons/stock-zoom-out-16.png"}}
+
+########################################################################
+# END - GROUP 2 > GIMP-ICONS
+########################################################################
+# MISSING ICONS :
+
+#define GIMP_STOCK_FONT                     GTK_STOCK_SELECT_FONT
+#define GIMP_STOCK_PALETTE                  GTK_STOCK_SELECT_COLOR
+#define GIMP_STOCK_PATTERN                  GIMP_STOCK_TOOL_BUCKET_FILL
+# Document History(Open Recent)
+}
+class "GtkWidget" style "gimp-icons"

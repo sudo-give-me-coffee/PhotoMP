@@ -1,0 +1,177 @@
+########################################################################
+# CS6-black-1 | GIMP Theme created by rgb4u.com
+########################################################################
+
+(default-threshold 16)
+(default-image
+    (width 640)
+    (height 480)
+    (unit pixels)
+    (xresolution 72.000000)
+    (yresolution 72.000000)
+    (resolution-unit inches)
+    (image-type rgb)
+    (fill-type background-fill)
+    (comment "Created by rgb4u"))
+(theme "CS6-black-1")
+
+# 1) Sets how many processors GIMP should try to use simultaneously.
+
+ (num-processors 2)
+
+# 2) Tools such as fuzzy-select and bucket fill find regions based on a
+# seed-fill algorithm.  The seed fill starts at the initially selected pixel
+# and progresses in all directions until the difference of pixel intensity
+# from the original is greater than a specified threshold. This value
+# represents the default threshold.  This is an integer value.
+ 
+ (default-threshold 16)
+
+# 3) Sets the default image in the "File/New" dialog.
+
+ (default-image
+     (width 640)
+     (height 480)
+     (unit pixels)
+     (xresolution 72.000000)
+     (yresolution 72.000000)
+     (resolution-unit inches)
+     (image-type rgb)
+     (fill-type background-fill)
+     (comment "Theme created by rgb4u")) # Changed !!!
+
+# 4) Specify a default image grid.
+
+ (default-grid
+     (style dashed)
+     (fgcolor (color-rgba 0.000000 0.000000 0.000000 1.000000)) 
+     (bgcolor (color-rgba 1.000000 1.000000 1.000000 1.000000))
+     (xspacing 10.000000)
+     (yspacing 10.000000)
+     (spacing-unit pixels)
+     (xoffset 0.000000)
+     (yoffset 0.000000)
+     (offset-unit pixels)) 
+
+# 5) Sets the minimal number of operations that can be undone.
+ 
+ (undo-levels 30) 
+
+# 6) Sets an upper limit to the memory that is used per image to keep operations
+# on the undo stack.
+
+ (undo-size 128M)  
+
+# 7) Sets the size of the previews in the Undo History.  Possible values are
+# tiny, extra-small, small, medium, large, extra-large, huge, enormous and
+# gigantic.
+ 
+ (undo-preview-size gigantic) 
+
+# 8) How many recently used plug-ins to keep on the Filters menu.
+
+ (plug-in-history-size 6)
+ 
+ 
+# 9) Sets whether GIMP should create previews of layers and channels. 
+ 
+# (layer-previews yes)
+
+# 10) Sets the preview size used for layers and channel previews in newly created
+# dialogs.
+
+ (layer-preview-size tiny) 
+ 
+# 11) Sets the size of the thumbnail shown in the Open dialog.  Possible values
+# are none, normal and large.
+
+ (thumbnail-size normal) 
+
+# 12) Sets the size of the checkerboard used to display transparency.  Possible
+# values are small-checks, medium-checks and large-checks.
+ 
+ (transparency-size small-checks)  
+
+# 13) When enabled, this will ensure that the full image is visible after a file
+# is opened, otherwise it will be displayed with a scale of 1:1. 
+
+ (initial-zoom-to-fit yes)  
+
+# 14) Sets the type of mouse pointers to use.  Possible values are tool-icon,
+# tool-crosshair and crosshair.
+ 
+ (cursor-mode tool-icon)
+
+# 15) Sets the text to appear in image window titles
+ 
+# %%  literal percent sign
+ %f  bare filename, or "Untitled"
+ %w  image width in pixels
+ %h  image height in pixels
+
+# 16) Sets the text to appear in image window status bars.  
+
+ %f  bare filename, or "Untitled"
+ %w  image width in pixels
+ %h  image height in pixels
+
+
+# 17) Sets the size of the navigation preview available in the lower right corner
+# of the image window.  
+
+ (navigation-preview-size large)
+
+# 18) Sets the default settings for the image view / fullscreen mode
+ 
+ (default-view   
+      (show-statusbar no)
+      (show-rulers no)
+      (show-layer-boundary no)
+      (show-guides no)
+      (show-grid no)
+ 
+# (default-fullscreen-view
+      (show-menubar no)
+      (show-statusbar no)
+      (show-rulers no)
+      (show-scrollbars yes)
+      (show-selection yes)
+      (show-layer-boundary no)
+      (show-guides no)
+      (show-grid no)
+#     (show-sample-points yes)
+
+# 19) SNAP TO :
+ 
+  (default-snap-to-guides yes)
+  (default-snap-to-grid no)
+  (default-snap-to-canvas yes) 
+  (default-snap-to-path no)
+
+# 20) When enabled, GIMP will not save an image if it has not been changed since
+# it was opened.  Possible values are yes and no.
+ 
+  (trust-dirty-flag yes)
+
+# 21) Remember the current tool, pattern, color, and brush across GIMP sessions. 
+ 
+  (save-device-status yes) 
+
+
+# 22) When enabled, you can change keyboard shortcuts for menu items by hitting a
+# key combination while the menu item is highlighted.  Possible values are
+# yes and no.
+
+ (can-change-accels no)
+
+# 23) Save changed keyboard shortcuts when GIMP exits
+
+ (save-accels yes)  
+
+# 24) SHOW THE :
+ 
+(toolbox-foo-area no)
+(toolbox-image-area no)
+(toolbox-wilber no)
+
+# end of gimprc
