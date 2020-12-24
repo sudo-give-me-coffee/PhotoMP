@@ -19,7 +19,7 @@
 
 (script-fu-register "guides-delimit-image"
   _"Delimitar imagem"
-  _"Crie 4 guias ao reador da imagem a delimitando"
+  _"Cria 4 guias delimitando a imagem"
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020.  MIT."
   "2020-08-05"
@@ -160,7 +160,7 @@
 
 (script-fu-register "guides-set-margin"
   _"Definir margens"
-  _"Cria 4 guias ao redor da com um espaço entre as guias e a borda da imagem"
+  _"Cria 4 guias criando uma margem na imagem"
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020.  MIT."
   "2020-08-05"
