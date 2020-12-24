@@ -60,7 +60,7 @@
 
 (script-fu-register "turn-link-off"
   _"Remover o vinculo"
-  _"Remove todas as camadas vinculadas"
+  _"Remove o vínculo de todas as camadas"
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020. MIT"
   ""
@@ -105,7 +105,7 @@
 )
 
 (script-fu-register "invert-visibility-of-linked-items"
-  _"Inverter a visibilidade nas camadas vinculadas"
+  _"Inverte a visibilidade das camadas vinculadas"
   _"Remove todas as camadas vinculadas"
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020. MIT"
@@ -165,7 +165,7 @@
 
 (script-fu-register "group-linked-layers"
   _"Agrupar camadas vinculadas"
-  _"Remove todas as camadas vinculadas"
+  _"Agrupa as camadas vinculadas.\nObserve que isso altera a ordem das camadas"
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020. MIT"
   ""
@@ -226,7 +226,7 @@
 
 (script-fu-register "merge-linked-layers"
   _"Combinar camadas vinculadas"
-  _"Remove todas as camadas vinculadas"
+  _"Combina as camadas vinculadas em uma camada só.\nObserve que isso altera a ordem das camadas"
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020. MIT"
   ""
