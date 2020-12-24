@@ -33,7 +33,7 @@
 (script-fu-register
   "group-mask"
   _"Criar grupo de corte"
-  _"Transforma o canal alpha da camada atual na máscara de um grupo.Assim qualquer item adicionado ao grupo será \"cortado\" preservando a máscara original do item"
+  _"Cria um grupo de camadas com uma máscara criada a partir da transparência da camada atual. As camadas  adicionadas ao grupo serão cortadas usando essa máscara."
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020.  MIT."
   "2020-08-05"
