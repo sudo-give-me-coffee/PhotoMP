@@ -1,3 +1,7 @@
+;
+;  Deixa as camadas vinculadas mais úteis
+;
+
 
 (define (remove-linked-layers image drawable)
   (let* (
@@ -21,9 +25,9 @@
 (script-fu-register "remove-linked-layers"
   _"Remover camadas vinculadas"
   _"Remove todas as camadas vinculadas"
-  "Alan Horkan"
-  "Alan Horkan, 2004.  Public Domain."
-  "2004-08-13"
+  "sudo-give-me-coffee"
+  "Natanael Barbosa Santos, 2020. MIT"
+  ""
   "*"
   SF-IMAGE    "Image"    0
   SF-DRAWABLE "Drawable" 0
@@ -57,9 +61,9 @@
 (script-fu-register "turn-link-off"
   _"Remover o vinculo"
   _"Remove todas as camadas vinculadas"
-  "Natanael Barbosa Santos"
-  "Alan Horkan, 2004.  Public Domain."
-  "2004-08-13"
+  "sudo-give-me-coffee"
+  "Natanael Barbosa Santos, 2020. MIT"
+  ""
   "*"
   SF-IMAGE    "Image"    0
   SF-DRAWABLE "Drawable" 0
@@ -103,9 +107,9 @@
 (script-fu-register "invert-visibility-of-linked-items"
   _"Inverter a visibilidade nas camadas vinculadas"
   _"Remove todas as camadas vinculadas"
-  "Alan Horkan"
-  "Alan Horkan, 2004.  Public Domain."
-  "2004-08-13"
+  "sudo-give-me-coffee"
+  "Natanael Barbosa Santos, 2020. MIT"
+  ""
   "*"
   SF-IMAGE    "Image"    0
   SF-DRAWABLE "Drawable" 0
@@ -162,9 +166,9 @@
 (script-fu-register "group-linked-layers"
   _"Agrupar camadas vinculadas"
   _"Remove todas as camadas vinculadas"
-  "Alan Horkan"
-  "Alan Horkan, 2004.  Public Domain."
-  "2004-08-13"
+  "sudo-give-me-coffee"
+  "Natanael Barbosa Santos, 2020. MIT"
+  ""
   "*"
   SF-IMAGE    "Image"    0
   SF-DRAWABLE "Drawable" 0
@@ -223,9 +227,9 @@
 (script-fu-register "merge-linked-layers"
   _"Combinar camadas vinculadas"
   _"Remove todas as camadas vinculadas"
-  "Alan Horkan"
-  "Alan Horkan, 2004.  Public Domain."
-  "2004-08-13"
+  "sudo-give-me-coffee"
+  "Natanael Barbosa Santos, 2020. MIT"
+  ""
   "*"
   SF-IMAGE    "Image"    0
   SF-DRAWABLE "Drawable" 0
