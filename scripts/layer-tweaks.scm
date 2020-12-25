@@ -1,16 +1,21 @@
 
+;
+;  Permite aplicar vários ajustes numa camada de uma vez
+;
+
 (define (layer-tweaks image drawable rotate 
                                      invert-rotate 
                                      h-pos 
                                      v-pos 
                                      color-effect 
+                                     add-mask 
                                      mirror-v 
                                      mirror-h 
                                      add-alpha 
-                                     add-mask 
                                      delimit-layer 
                                      mark-centre 
-                                     enable-link)
+                                     enable-link
+                                     invert-visibility)
   (let* (
           (height (car (gimp-image-height image)))
           (width  (car (gimp-image-width  image)))
@@ -26,9 +31,13 @@
           (layer-y 0)
           
           (rotate (/ (* rotate *pi*) 180))
+          (pass FALSE)
         )
 
     (gimp-image-undo-group-start image)
+      (if (= add-mask    4) (set! add-mask 5))
+
+      (if (> add-mask    0) (gimp-layer-add-mask layer (car (gimp-layer-create-mask layer (- add-mask 1)))))
       (gimp-selection-none image)
       
       (if (= invert-rotate TRUE) (set! rotate (* rotate -1)))
@@ -55,22 +64,12 @@
       (gimp-layer-set-offsets layer layer-x layer-y)
       
       (if (= 1 color-effect) (gimp-drawable-desaturate layer 0))
-      
-      (if (= 2 color-effect)
-        (begin
-          (gimp-drawable-desaturate layer DESATURATE-LIGHTNESS)
-          (gimp-drawable-brightness-contrast layer -0.078125 -0.15625)
-          (gimp-drawable-color-balance layer TRANSFER-SHADOWS TRUE 30 0 -30)
-        )
-      )
-      
-      (if (= 3 color-effect) (gimp-drawable-invert layer 1))
-      
+      (if (= 2 color-effect) (gimp-drawable-invert layer 1))
+
       (if (= mirror-v    1) (gimp-item-transform-flip-simple layer 1 TRUE 0))
       (if (= mirror-h    1) (gimp-item-transform-flip-simple layer 0 TRUE 0))
       (if (= add-alpha   1) (gimp-layer-add-alpha layer))
-      (if (= add-mask    1) (gimp-layer-add-mask layer (car (gimp-layer-create-mask layer 0))))
-      (if (= add-mask    1) (gimp-layer-set-edit-mask layer 0))
+      (if (> add-mask    0) (gimp-layer-set-edit-mask layer 0))
       
                      
       (if (= delimit-layer TRUE)
@@ -96,6 +95,17 @@
       
       (if (= enable-link 1) (gimp-item-set-linked layer 1))
       
+      (if (= invert-visibility 1) (begin
+        (if (= (car (gimp-item-get-visible layer)) TRUE) (begin
+          (gimp-item-set-visible layer FALSE)
+          (set! pass TRUE)
+        ))
+        (if (= (car (gimp-item-get-visible layer)) FALSE) (begin
+          (if (= pass FALSE)
+            (gimp-item-set-visible layer TRUE)
+          )
+        ))
+       ))
     (gimp-image-undo-group-end image)
     (gimp-displays-flush)
   )
@@ -117,15 +127,19 @@
   SF-OPTION     "Posição vertical"   '("Não alterar" "Em cima" "Ao centro" "Em baixo")
   SF-OPTION     "Cores da camada" '("Não alterar" 
                                     "Deixar em escala de cinza (dessaturar)" 
-                                    "Transformar em tons de sépia"
                                     "Inverter cores" )
+  SF-OPTION     "Máscara"         '("Não adicionar" 
+                                    "Opaca" 
+                                    "Transparente"
+                                    "A partir do canal alpha"
+                                    "A partir da seleção" )
   SF-TOGGLE     "Espelhar verticalmente"    FALSE
   SF-TOGGLE     "Espelhar Horizontalmente"  FALSE
   SF-TOGGLE     "Adicionar canal alfa"  FALSE
-  SF-TOGGLE     "Adicionar máscara"  FALSE
   SF-TOGGLE     "Delimitar camada"  FALSE
   SF-TOGGLE     "Marcar centro da camada"  FALSE
   SF-TOGGLE     "Ativar vínculo"  FALSE
+  SF-TOGGLE     "Inverter visibilidade"  FALSE
 )
 
 (script-fu-menu-register "layer-tweaks"
