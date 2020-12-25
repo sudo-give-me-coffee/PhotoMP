@@ -1,5 +1,5 @@
 
-(define (group-mask image drawable)
+(define (clip-mask image drawable)
   (let* (
            (width (car (gimp-image-width image)))
            (height (car (gimp-image-height image)))
@@ -21,18 +21,16 @@
       (gimp-item-set-visible new-layer FALSE)
 
       (gimp-layer-add-mask group (car (gimp-layer-create-mask group 1)))
-      (gimp-image-select-item image 2 active-layer)
       (gimp-drawable-edit-fill (car (gimp-layer-get-mask group)) 2)
-      (gimp-item-set-name group (string-append "-> " (car (gimp-item-get-name active-layer))))
-      (gimp-selection-none image)
+      (gimp-item-set-name group (string-append "--" (car (gimp-item-get-name active-layer))))
     (gimp-image-undo-group-end image)
    (gimp-displays-flush)
   )
 ) 
 
 (script-fu-register
-  "group-mask"
-  _"Criar grupo de corte"
+  "clip-mask"
+  _"Criar máscara de corte"
   _"Cria um grupo de camadas com uma máscara criada a partir da transparência da camada atual. As camadas  adicionadas ao grupo serão cortadas usando essa máscara."
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020.  MIT."
@@ -44,4 +42,4 @@
 
 
 
-(script-fu-menu-register "group-mask" "<Image>/Layer/")
+(script-fu-menu-register "clip-mask" "<Image>/Layer/")
