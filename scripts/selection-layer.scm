@@ -27,8 +27,8 @@
 
 (script-fu-register
   "selection-layer"
-  "Criar camada de seleção"
-  ""
+  "Passo 1 - Criar camada de seleção"
+  "Adiciona uma nova camada com a cor escolhida, essa camada terá uma máscara a área visivel dessa camada se tornará uma seleção ao aplicar o passo 2"
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020.  MIT."
   "2020-08-05"
@@ -77,8 +77,8 @@
 
 (script-fu-register
   "selection-layer-apply"
-  "Aplicar máscara da camada para seleção"
-  ""
+  "Passo 2 - Aplicar máscara da camada para seleção"
+  "Transforma a máscara da camada atual em seleção, esse passo oculta a a camada atual e ativa a camada inferior, note que esse passo depende do passo 1"
   "sudo-give-me-coffee"
   "Natanael Barbosa Santos, 2020.  MIT."
   "2020-08-05"
