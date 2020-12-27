@@ -1,6 +1,6 @@
 ;; -*-scheme-*-
 
-(define (layer-via-copy image drawable)
+(define (layer-via-cut image drawable)
   (let* (
           (height (car (gimp-image-height image)))
           (width  (car (gimp-image-width  image)))
@@ -15,7 +15,8 @@
         )
         
     (gimp-image-undo-group-start image)
-      (gimp-edit-copy drawable)
+      (gimp-edit-cut drawable)
+      (gimp-edit-clear (car (gimp-image-get-active-layer image)))
       (gimp-image-insert-layer image new-layer-FG 0 0)
       (gimp-image-set-active-layer image new-layer-FG)
       (gimp-floating-sel-anchor (car (gimp-edit-paste new-layer-FG TRUE)))
@@ -24,9 +25,9 @@
   )
 )
 
-(script-fu-register "layer-via-copy"
-  _"Nova camada por cópia"
-  _"Duplica a parte selecionada da camada atual, caso não tenha nenhuma área selecionada, toda a camada sera duplicada"
+(script-fu-register "layer-via-cut"
+  _"Nova camada por recorte"
+  _"Recorta a parte selecionada da camada atual e cola em uma nova camada, caso não tenha nenhuma área selecionada, uma camada em branco será criada"
   "Natanael Barbosa Santos"
   "Natanael Barbosa Santos, 2020.  Licenced under MIT terms"
   ""
@@ -35,6 +36,6 @@
   SF-DRAWABLE   "Drawable" 0
 )
 
-(script-fu-menu-register "layer-via-copy"
+(script-fu-menu-register "layer-via-cut"
                          "<Image>/Layer/Área selecionada/")
                          
