@@ -27,7 +27,7 @@
 
 (script-fu-register "layer-via-cut"
   _"Nova camada por recorte"
-  _"Recorta a parte selecionada da camada atual e cola em uma nova camada, caso não tenha nenhuma área selecionada, uma camada em branco será criada"
+  _"Recorta a parte selecionada da camada atual e cola em uma nova camada, caso não tenha nenhuma área selecionada, uma camada em branco será criada. Note que a camada só será recortada de fato caso possua o canal alpha"
   "Natanael Barbosa Santos"
   "Natanael Barbosa Santos, 2020.  Licenced under MIT terms"
   ""
